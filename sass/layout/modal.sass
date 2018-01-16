@@ -1,0 +1,123 @@
+// If "tinted" modal page shows up and does not allow any interactivity, uncomment the 2 lines of code below:
+// body.modal-open div.modal-backdrop
+//   z-index: 0
+.pro
+
+.modal-header
+  padding: 0
+
+.modal-body
+  text-align: initial
+  // border-bottom: 1px solid rgba(0, 0, 0, 0.1)
+  padding: 35px 76px 0px 25px
+
+.modal-project-title
+  text-transform: none
+  letter-spacing: 0
+
+p.modal-project-description
+  letter-spacing: 0
+  margin-bottom: 3vh !important
+
+p.modal-project-requirements
+  letter-spacing: 0
+  margin-bottom: 3vh !important
+
+.modal-footer
+  display: flex
+  justify-content: space-between
+  padding: 2vh 25px 2vh 25px
+
+.viewsite
+  box-sizing: border-box
+  background: $pink
+  font-weight: 600
+  border: 0
+  display: inline-block
+  // font-size: 10pt
+  padding: 10px 20px
+  cursor: pointer
+  color: $white
+  span
+    padding: 0 0.5em
+
+.close
+  font-weight: 800
+  display: flex
+  font-size: 20pt
+  cursor: pointer
+  color: gray
+  position: relative
+  align-items: center
+  right: 10px
+  .x
+    width: 5px
+    height: 26px
+    background: #000
+    position: absolute
+  .x:first-child
+    -webkit-transform: rotate(45deg)
+  .x:last-child
+    -webkit-transform: rotate(-45deg)
+
+// ====== Responsive Layout ====================
+@media only screen and (max-width: 400px)
+  .d-block.w-100
+    height: 200px
+
+@media only screen and (max-width: 800px) and (min-width: 400px)
+  .d-block.w-100
+    height: 330px
+
+@media only screen and (max-width: 1200px) and (min-width: 800px)
+  .d-block.w-100
+    height: 400px
+
+@media only screen and (min-width: 1200px)
+  .d-block.w-100
+    height: 330px
+
+
+// .modal
+//   display: none
+//   position: fixed
+//   z-index: 10
+//   left: 0
+//   top: 0
+//   height: 100%
+//   width: 100%
+//   overflow: auto
+//   background-color: rgba(0, 0, 0, 0.5)
+//
+// .modal-content
+//   background-color: #fff
+//   margin: 20% auto
+//   width: 70%
+//   box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2),0 7px 20px 0 rgba(0,0,0,0.17)
+//   animation-name: modalopen
+//   animation-duration: 1s
+//
+// .modal-body
+//   background: coral
+//   padding: 15px
+//   color: $black
+//
+// .modal-footer
+//   background: $yellow
+//   color: $black
+//
+// .closeBtn
+//   color: $gray
+//   float: right
+//   font-size: 30px
+//
+// .closeBtn:hover, .closeBtn:focus
+//   color: $black
+//   text-decoration: none
+//   cursor: pointer
+//
+// @keyframes modalopen
+//   from
+//     opacity: 0
+//   to
+//     opacity: 1

@@ -1,0 +1,851 @@
+doctype html
+html lang="en"
+  head
+    meta charset="utf-8"
+    meta name="viewport" content="width=device-width, initial-scale=1"
+    title Yi Sing | Web Designer & Developer
+    link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous"
+    link rel="stylesheet" href="css/main.css"
+
+  body
+    / ============================ Main Navigation Bar + Logo ====================
+    header.main-header
+      div.container.grid
+        nav.main-nav
+          ul.unstyled-list
+            li
+              a.active.scroll href="#hero" Home
+            li
+              a.active.scroll href="#aboutme" About
+            li
+              a.active.scroll href="#skills" Skills
+            li
+              a.active.scroll href="#portfolio" Portfolio
+            li
+              a.active.scroll href="#contact" Contact
+        div.nav-toggle
+          div.hamburger
+
+
+    / =============================== Landing page ===========================
+    / p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <strong>THIS IS MY LANDING PAGE AREA!</strong>
+
+    section.landingpage.parallax--bg
+      canvas.canvas
+      div.container.landingpage
+        h1.title.parallax Full Stack Web Developer
+        h2.caption.parallax turning <span>IDEAS</span> into <span>REALITY</span>
+      a.btn.down.scroll href="#hero"
+        <i class="fa fa-angle-down" aria-hidden="true"></i>
+
+
+    / ================ Hero area (Advertisement of me + Laptop image) ============
+    section.hero#hero
+      div.container.grid
+        div.hero-text.col.col--2-3
+          h1.title-large Hello. I'm <span>Yi Sing</span>.
+          p.text-intro I'm a full stack web developer based in Singapore and I design and create <b>beautiful</b>, <b>immersive</b> and <b>responsive</b> user interfaces for websites across all devices. <br><br> My priority is to create a space that captivates the viewer at first glance, thereby increasing your customer conversion rate. My goal is to make your brand synonymous with your product. <br><br> I will love to build a website for you.
+          / My goal is to achieve proficiency to release a successful app someday that will leave a positive impact in people's lives.
+          a.btn.btn--secondary.scroll#aboutme href="#contact" Contact Me
+
+        // These 3 IMAGES will fade in and out after a certain timing and will repeat infinitely.
+        div.image.col.col--1-3
+          div.logo
+            / img src="images/logo/logotest.png" alt="yising-logo"
+            img src="/images/logo/logocolored2.png" alt="yising-logo"
+            // act as a placeholder image
+          div.gallery
+            img.hero-img.laptop src="/images/hero/Macbook1.png" alt="laptop-photo"
+            / img.hero-img.phone src="images/phone1.png" alt="phone-photo"
+            / img.hero-img.monitor src="images/monitor.png" alt="monitor-photo"
+
+
+    / =============================== Middle Box (ABOUT ME) ======================
+    section.aboutme
+      / Not using "div.container.grid" because I want to make the background to be max width of the viewport. If there's a container/columns, background cannot escape out of the container.
+      div.grid.aboutme
+        div.middle-box
+          h1 About Me
+          / p Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        div.col.bg-main
+          div.col.paragraph
+            / h1 Doing great things for you
+            / h2 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            p.paragraph In September 2017, after about two weeks of learning Python on my own, I decided to attend a 3-month web development bootcamp just to see if I am passionate about coding in general. <br><br>What started off as a curiosity with code slowly turned into something that I genuinely enjoy over the course of the bootcamp. <br><br>While the learning journey has been frustrating and difficult at times, the thrill of seeing my imagination and ideas come to life on the web is what drives me on in continuing this path.
+            a.btn.btn--secondary Resume
+          div.col.img-box.portrait
+            img src="/images/workspace/becreative.jpeg" alt="aboutme-photo"
+          div.col.img-box.landscape
+            img src="/images/workspace/becreative.jpeg" alt="aboutme-photo"
+
+
+
+    / ============================= Promote My Skills ============================
+    section.myskills#skills
+      h1.col.col--full My Skills
+      div.skills-points
+        div.skills-point.col.col--1-3.frontend
+          img.symbol src="/images/skillpoint-icon/frontend-red.png" alt="Front-end-logo"
+          h2.area Front End
+          p.paragraph-skills-point Front End development is building out the visual components of a website design into a custom website with the user experience in mind. In this area, I have experience in
+          div.icons
+            div.javascript
+              img src="/images/grid-icon/javascript.svg.png" alt="javascript logo"
+              / p Javascript
+            div.jquery
+              img src="/images/grid-icon/jquery.png" alt="jquery logo"
+              / p jQuery
+            div.html
+              img src="/images/grid-icon/html5.svg.png" alt="html logo"
+              / p HTML
+            div.slim
+              img src="/images/grid-icon/slim.png" alt="slim logo"
+              / p Slim
+            div.css
+              img src="/images/grid-icon/css3.png" alt="css logo"
+              / p CSS
+            div.sass
+              img src="/images/grid-icon/sass.svg.png" alt="sass logo"
+              / p SASS
+            div.bootstrap
+              img src="/images/grid-icon/bootstrap.svg.png" alt="bootstrap logo"
+              / p Bootstrap
+            div.gimp
+              img src="/images/grid-icon/gimp.svg.png" alt="gimp logo"
+              / p Gimp
+            div.inkscape
+              img src="/images/grid-icon/inkscape.png" alt="inkscape logo"
+              / p Inkscape
+            div.balsamiq
+              img src="/images/grid-icon/balsamiq.svg" alt="balsamiq logo"
+              / p Balsamiq
+            div.rwd
+              img src="/images/grid-icon/responsivewebdesignlogo2.svg.png" alt="rwd logo"
+              / p Responsive Web Design
+          div.description
+            p Javascript | jQuery | HTML <span>5</span> | Slim | CSS <span>3</span> | Sass | Bootstrap | Gimp | Inkscape | Balsamiq | Responsive Web Design
+
+        div.skills-point.col.col--1-3.backend
+          img.symbol src="/images/skillpoint-icon/backend-grey.png" alt="Back-end-logo"
+          h2.area Back End
+          p.paragraph-skills-point Back End development is making the application work as intended. It may involve security, database interactions, and performance etc. In this area, I have experience in
+          div.grid.icons
+            div.ruby
+              img src="/images/grid-icon/ruby.svg.png"
+              / p Ruby
+            div.rails
+              img src="/images/grid-icon/rails.svg.png"
+                / p Rails
+            div.rspec
+              img src="/images/grid-icon/rspecnew.png"
+            div.postgresql
+              img src="/images/grid-icon/postgresql.svg.png" alt="postgresql logo"
+              / p PostgreSQL
+            div.python
+              img src="/images/grid-icon/python.svg.png" alt="python logo"
+              / p Python
+          div.description.backend
+            p Ruby | Rails | RSpec | PostgreSQL | Python
+
+        div.skills-point.col.col--1-3.others
+          img.symbol src="/images/skillpoint-icon/others-black.png" alt="Other-skills-logo"
+          h2.area Others
+          p.paragraph-skills-point Other skills that I learnt along the way
+
+          div.grid.icons
+            div.git
+              img src="/images/grid-icon/git.svg.png" alt="git logo"
+              / p Git
+            div.heroku
+              img src="/images/grid-icon/heroku.svg" alt="heroku logo"
+              / p Heroku
+            div.linux
+              img src="/images/grid-icon/linux.svg.png" alt="linux logo"
+              / p LinuxCLI
+          div.description.others
+            p Git | Heroku | Linux CLI
+
+
+      / ================ Skill Bar =================
+      div.skillbargrid.col
+        / ================= FRONT END ================
+        <div class="skillbar clearfix " data-percent="70%">
+        <div class="skillbar-title" style="background: #b20000;"><span>HTML</span></div>
+        <div class="skillbar-bar" style="background: #a80b0b;"></div>
+        <div class="skill-bar-percent"><span>70%</span></div>
+        </div>
+
+        <div class="skillbar clearfix " data-percent="70%">
+        <div class="skillbar-title" style="background: #b20000;"><span>Slim</span></div>
+        <div class="skillbar-bar" style="background: #a80b0b;"></div>
+        <div class="skill-bar-percent"><span>70%</span></div>
+        </div>
+
+        <div class="skillbar clearfix " data-percent="70%">
+        <div class="skillbar-title" style="background: #b20000;"><span>CSS</span></div>
+        <div class="skillbar-bar" style="background: #a80b0b;"></div>
+        <div class="skill-bar-percent"><span>70%</span></div>
+        </div>
+
+        <div class="skillbar clearfix " data-percent="70%">
+        <div class="skillbar-title" style="background: #b20000;"><span>Sass</span></div>
+        <div class="skillbar-bar" style="background: #a80b0b;"></div>
+        <div class="skill-bar-percent"><span>70%</span></div>
+        </div>
+
+        <div class="skillbar clearfix " data-percent="70%">
+        <div class="skillbar-title" style="background: #b20000;"><span>Balsamiq</span></div>
+        <div class="skillbar-bar" style="background: #a80b0b;"></div>
+        <div class="skill-bar-percent"><span>70%</span></div>
+        </div>
+
+        <div class="skillbar clearfix " data-percent="70%">
+        <div class="skillbar-title" style="background: #b20000;"><span>RWD</span></div>
+        <div class="skillbar-bar" style="background: #a80b0b;"></div>
+        <div class="skill-bar-percent"><span>70%</span></div>
+        </div>
+
+        <div class="skillbar clearfix " data-percent="60%">
+        <div class="skillbar-title" style="background: #b20000;"><span>Bootstrap</div>
+        <div class="skillbar-bar" style="background: #a80b0b;"></div>
+        <div class="skill-bar-percent"><span>60%</span></div>
+        </div>
+
+        <div class="skillbar clearfix " data-percent="50%">
+          <div class="skillbar-title" style="background: #b20000;"><span>Javascript</span></div>
+          <div class="skillbar-bar" style="background: #a80b0b;"></div>
+          <div class="skill-bar-percent"><span>50%</span></div>
+        </div>
+
+        <div class="skillbar clearfix " data-percent="50%">
+          <div class="skillbar-title" style="background: #b20000;"><span>jQuery</span></div>
+          <div class="skillbar-bar" style="background: #a80b0b;"></div>
+          <div class="skill-bar-percent"><span>50%</span></div>
+        </div>
+
+        <div class="skillbar clearfix " data-percent="30%">
+        	<div class="skillbar-title" style="background: #b20000;"><span>Gimp</span></div>
+        	<div class="skillbar-bar" style="background: #a80b0b;"></div>
+        	<div class="skill-bar-percent"><span>30%</span></div>
+        </div>
+
+        <div class="skillbar clearfix " data-percent="30%">
+          <div class="skillbar-title" style="background: #b20000;"><span>Inkscape</span></div>
+          <div class="skillbar-bar" style="background: #a80b0b;"></div>
+          <div class="skill-bar-percent"><span>30%</span></div>
+        </div>
+
+
+        / ===============  BACK END ===============
+        <div class="skillbar clearfix " data-percent="60%">
+          <div class="skillbar-title" style="background: #707070;"><span>Ruby</span></div>
+          <div class="skillbar-bar" style="background: #7f7f7f;"></div>
+          <div class="skill-bar-percent"><span>60%</span></div>
+        </div>
+
+        <div class="skillbar clearfix " data-percent="60%">
+          <div class="skillbar-title" style="background: #707070;"><span>Rails</span></div>
+          <div class="skillbar-bar" style="background: #7f7f7f;"></div>
+          <div class="skill-bar-percent"><span>60%</span></div>
+        </div>
+
+        <div class="skillbar clearfix " data-percent="60%">
+          <div class="skillbar-title" style="background: #707070;"><span>PostgreSQL</span></div>
+          <div class="skillbar-bar" style="background: #7f7f7f;"></div>
+          <div class="skill-bar-percent"><span>60%</span></div>
+        </div>
+
+
+        <div class="skillbar clearfix " data-percent="60%">
+          <div class="skillbar-title" style="background: #707070;"><span>Python</span></div>
+          <div class="skillbar-bar" style="background: #7f7f7f;"></div>
+          <div class="skill-bar-percent"><span>60%</span></div>
+        </div>
+
+        <div class="skillbar clearfix " data-percent="30%">
+        <div class="skillbar-title" style="background: #707070;"><span>RSpec</span></div>
+        <div class="skillbar-bar" style="background: #7f7f7f;"></div>
+        <div class="skill-bar-percent"><span>30%</span></div>
+        </div>
+
+        / ================== OTHERS =====================
+        <div class="skillbar clearfix " data-percent="60%">
+        <div class="skillbar-title" style="background: #0e0e0e;"><span>Heroku</span></div>
+        <div class="skillbar-bar" style="background: #1e1e1e;"></div>
+        <div class="skill-bar-percent"><span>60%</span></div>
+        </div>
+
+        <div class="skillbar clearfix " data-percent="50%">
+          <div class="skillbar-title" style="background: #0e0e0e;"><span>Git</span></div>
+          <div class="skillbar-bar" style="background: #1e1e1e;"></div>
+          <div class="skill-bar-percent"><span>50%</span></div>
+        </div>
+
+
+        <div class="skillbar clearfix " data-percent="50%">
+          <div class="skillbar-title" style="background: #0e0e0e;"><span>Linux CLI</span></div>
+          <div class="skillbar-bar" style="background: #1e1e1e;"></div>
+          <div class="skill-bar-percent"><span>50%</span></div>
+        </div>
+
+
+
+    / ================================= PROJECTS =================================
+    section.projects.cta#portfolio
+      h1.title-large PORTFOLIO
+      p.text-large Click on the images to learn more.
+      div.portfolio-items
+
+
+        / =================== For every CARD/portfolio item, use a different background photo!!!=========================
+        / ================= Portfolio Item 1 ===============
+        figure.portfolio-item
+          / img.portfolio-image src="images/workspace/landingpage.jpeg" alt="portfolio item"
+          figcaption
+            div.project-description
+              h2.project-title Project Name
+              p.project-stack Ruby on Rails + PostgreSQL
+            div.project-button
+              // ============== Rmb to add class "modalBtn(#num)" to the link <a> tag below ===========
+              a.project-link#modalBtn href="#myModal1" data-toggle="modal" Learn More
+              / ============= MODAL (IMPORTANT: rmb to change the ID of #myModal to #myModal(#num) !!!)========================
+              div.modal.fade#myModal1 role="dialog"
+                div.modal-dialog
+                  / ========== Modal Content =====================
+                  div.modal-content
+                    div.modal-header
+                      / ======== Insert CAROUSELL here ========
+                      div id="carouselExampleControls" class="carousel slide" data-ride="carousel"
+                        div class="carousel-inner"
+                          div class="carousel-item active"
+                            / ======== Screenshot 1 ===========
+                            img class="d-block w-100" src="images/workspace/becreative.jpeg" alt="First slide"
+                          div class="carousel-item"
+                            / ======== Screenshot 2 ===========
+                            img class="d-block w-100" src="images/workspace/workspace.jpeg" alt="Second slide"
+                          div class="carousel-item"
+                            / ======== Screenshot 3 ==========
+                            img class="d-block w-100" src="images/workspace/dowhatisgreat.jpeg" alt="Third slide"
+                        / ======= Carousell left & right arrows ==================
+                        / <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                        /   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        /   <span class="sr-only">Previous</span>
+                        / </a>
+                        / <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                        /   <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        /   <span class="sr-only">Next</span>
+                        / </a>
+                      / ========= End of CAROUSELL ============
+                    div.modal-body
+                      h1.modal-project-title Title of project
+                      p.modal-project-description Description of project
+                      p.modal-project-requirements Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    div.modal-footer
+                      a.viewsite-link href="#"
+                        button.viewsite <i class="fas fa-paper-plane"></i> <span>View Site</span>
+                      button type="button" class="close" data-dismiss="modal"
+                        div.x
+                        div.x
+                  / ========== End of Modal Content =====================
+                / ============== End of Modal Dialog ===================
+              / =========== END OF MODAL ===================
+
+
+        / ================= Portfolio Item 2 ===============
+        figure.portfolio-item
+          / img.portfolio-image src="images/workspace/landingpage.jpeg" alt="portfolio item"
+          figcaption
+            div.project-description
+              h2.project-title Project Name
+              p.project-stack Ruby on Rails + PostgreSQL
+            div.project-button
+              // ============== Rmb to add class "modalBtn(#num)" to the link <a> tag below ===========
+              a.project-link#modalBtn href="#myModal2" data-toggle="modal" Learn More
+              / ============= MODAL (IMPORTANT: rmb to change the ID of #myModal!!!)========================
+              div.modal.fade#myModal2 role="dialog"
+                div.modal-dialog
+                  / ========== Modal Content =====================
+                  div.modal-content
+                    div.modal-header
+                      / ======== Insert CAROUSELL here ========
+                      div id="carouselExampleControls" class="carousel slide" data-ride="carousel"
+                        div class="carousel-inner"
+                          div class="carousel-item active"
+                            / ======== Screenshot 1 ===========
+                            img class="d-block w-100" src="images/workspace/becreative.jpeg" alt="First slide"
+                          div class="carousel-item"
+                            / ======== Screenshot 2 ===========
+                            img class="d-block w-100" src="images/workspace/workspace.jpeg" alt="Second slide"
+                          div class="carousel-item"
+                            / ======== Screenshot 3 ==========
+                            img class="d-block w-100" src="images/workspace/dowhatisgreat.jpeg" alt="Third slide"
+                        / ======= Carousell left & right arrows ==================
+                        / <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                        /   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        /   <span class="sr-only">Previous</span>
+                        / </a>
+                        / <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                        /   <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        /   <span class="sr-only">Next</span>
+                        / </a>
+                      / ========= End of CAROUSELL ============
+                    div.modal-body
+                      h1.modal-project-title Title of project
+                      p.modal-project-description Description of project
+                      p.modal-project-requirements Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    div.modal-footer
+                      a.viewsite-link href="#"
+                        button.viewsite <i class="fas fa-paper-plane"></i> <span>View Site</span>
+                      button type="button" class="close" data-dismiss="modal"
+                        div.x
+                        div.x
+                  / ========== End of Modal Content =====================
+                / ============== End of Modal Dialog ===================
+              / =========== END OF MODAL ===================
+
+
+        / ================= Portfolio Item 3 ===============
+        figure.portfolio-item
+          / img.portfolio-image src="images/workspace/landingpage.jpeg" alt="portfolio item"
+          figcaption
+            div.project-description
+              h2.project-title Project Name
+              p.project-stack Ruby on Rails + PostgreSQL
+            div.project-button
+              // ============== Rmb to add class "modalBtn(#num)" to the link <a> tag below ===========
+              a.project-link#modalBtn href="#myModal3" data-toggle="modal" Learn More
+              / ============= MODAL (IMPORTANT: rmb to change the ID of #myModal!!!)========================
+              div.modal.fade#myModal3 role="dialog"
+                div.modal-dialog
+                  / ========== Modal Content =====================
+                  div.modal-content
+                    div.modal-header
+                      / ======== Insert CAROUSELL here ========
+                      div id="carouselExampleControls" class="carousel slide" data-ride="carousel"
+                        div class="carousel-inner"
+                          div class="carousel-item active"
+                            / ======== Screenshot 1 ===========
+                            img class="d-block w-100" src="images/workspace/becreative.jpeg" alt="First slide"
+                          div class="carousel-item"
+                            / ======== Screenshot 2 ===========
+                            img class="d-block w-100" src="images/workspace/workspace.jpeg" alt="Second slide"
+                          div class="carousel-item"
+                            / ======== Screenshot 3 ==========
+                            img class="d-block w-100" src="images/workspace/dowhatisgreat.jpeg" alt="Third slide"
+                        / ======= Carousell left & right arrows ==================
+                        / <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                        /   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        /   <span class="sr-only">Previous</span>
+                        / </a>
+                        / <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                        /   <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        /   <span class="sr-only">Next</span>
+                        / </a>
+                      / ========= End of CAROUSELL ============
+                    div.modal-body
+                      h1.modal-project-title Title of project
+                      p.modal-project-description Description of project
+                      p.modal-project-requirements Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    div.modal-footer
+                      a.viewsite-link href="#"
+                        button.viewsite <i class="fas fa-paper-plane"></i> <span>View Site</span>
+                      button type="button" class="close" data-dismiss="modal"
+                        div.x
+                        div.x
+                  / ========== End of Modal Content =====================
+                / ============== End of Modal Dialog ===================
+              / =========== END OF MODAL ===================
+
+
+        / ============= Portfolio Item 4 ======================
+        figure.portfolio-item
+          / img.portfolio-image src="images/workspace/landingpage.jpeg" alt="portfolio item"
+          figcaption
+            div.project-description
+              h2.project-title Project Name
+              p.project-stack Ruby on Rails + PostgreSQL
+            div.project-button
+              // ============== Rmb to add class "modalBtn(#num)" to the link <a> tag below ===========
+              a.project-link#modalBtn href="#myModal4" data-toggle="modal" Learn More
+              / ============= MODAL (IMPORTANT: rmb to change the ID of #myModal!!!)========================
+              div.modal.fade#myModal4 role="dialog"
+                div.modal-dialog
+                  / ========== Modal Content =====================
+                  div.modal-content
+                    div.modal-header
+                      / ======== Insert CAROUSELL here ========
+                      div id="carouselExampleControls" class="carousel slide" data-ride="carousel"
+                        div class="carousel-inner"
+                          div class="carousel-item active"
+                            / ======== Screenshot 1 ===========
+                            img class="d-block w-100" src="images/workspace/becreative.jpeg" alt="First slide"
+                          div class="carousel-item"
+                            / ======== Screenshot 2 ===========
+                            img class="d-block w-100" src="images/workspace/workspace.jpeg" alt="Second slide"
+                          div class="carousel-item"
+                            / ======== Screenshot 3 ==========
+                            img class="d-block w-100" src="images/workspace/dowhatisgreat.jpeg" alt="Third slide"
+                        / ======= Carousell left & right arrows ==================
+                        / <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                        /   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        /   <span class="sr-only">Previous</span>
+                        / </a>
+                        / <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                        /   <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        /   <span class="sr-only">Next</span>
+                        / </a>
+                      / ========= End of CAROUSELL ============
+                    div.modal-body
+                      h1.modal-project-title Title of project
+                      p.modal-project-description Description of project
+                      p.modal-project-requirements Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    div.modal-footer
+                      a.viewsite-link href="#"
+                        button.viewsite <i class="fas fa-paper-plane"></i> <span>View Site</span>
+                      button type="button" class="close" data-dismiss="modal"
+                        div.x
+                        div.x
+                  / ========== End of Modal Content =====================
+                / ============== End of Modal Dialog ===================
+              / =========== END OF MODAL ===================
+
+
+        / ============= Portfolio Item 5 ======================
+        figure.portfolio-item
+          / img.portfolio-image src="images/workspace/landingpage.jpeg" alt="portfolio item"
+          figcaption
+            div.project-description
+              h2.project-title Project Name
+              p.project-stack Ruby on Rails + PostgreSQL
+            div.project-button
+              // ============== Rmb to add class "modalBtn(#num)" to the link <a> tag below ===========
+              a.project-link#modalBtn href="#myModal5" data-toggle="modal" Learn More
+              / ============= MODAL (IMPORTANT: rmb to change the ID of #myModal!!!)========================
+              div.modal.fade#myModal5 role="dialog"
+                div.modal-dialog
+                  / ========== Modal Content =====================
+                  div.modal-content
+                    div.modal-header
+                      / ======== Insert CAROUSELL here ========
+                      div id="carouselExampleControls" class="carousel slide" data-ride="carousel"
+                        div class="carousel-inner"
+                          div class="carousel-item active"
+                            / ======== Screenshot 1 ===========
+                            img class="d-block w-100" src="images/workspace/becreative.jpeg" alt="First slide"
+                          div class="carousel-item"
+                            / ======== Screenshot 2 ===========
+                            img class="d-block w-100" src="images/workspace/workspace.jpeg" alt="Second slide"
+                          div class="carousel-item"
+                            / ======== Screenshot 3 ==========
+                            img class="d-block w-100" src="images/workspace/dowhatisgreat.jpeg" alt="Third slide"
+                        / ======= Carousell left & right arrows ==================
+                        / <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                        /   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        /   <span class="sr-only">Previous</span>
+                        / </a>
+                        / <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                        /   <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        /   <span class="sr-only">Next</span>
+                        / </a>
+                      / ========= End of CAROUSELL ============
+                    div.modal-body
+                      h1.modal-project-title Title of project
+                      p.modal-project-description Description of project
+                      p.modal-project-requirements Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    div.modal-footer
+                      a.viewsite-link href="#"
+                        button.viewsite <i class="fas fa-paper-plane"></i> <span>View Site</span>
+                      button type="button" class="close" data-dismiss="modal"
+                        div.x
+                        div.x
+                  / ========== End of Modal Content =====================
+                / ============== End of Modal Dialog ===================
+              / =========== END OF MODAL ===================
+
+
+        / ============= Portfolio Item 6 ======================
+        figure.portfolio-item
+          / img.portfolio-image src="images/workspace/landingpage.jpeg" alt="portfolio item"
+          figcaption
+            div.project-description
+              h2.project-title Project Name
+              p.project-stack Ruby on Rails + PostgreSQL
+            div.project-button
+              // ============== Rmb to add class "modalBtn(#num)" to the link <a> tag below ===========
+              a.project-link#modalBtn href="#myModal6" data-toggle="modal" Learn More
+              / ============= MODAL (IMPORTANT: rmb to change the ID of #myModal!!!)========================
+              div.modal.fade#myModal6 role="dialog"
+                div.modal-dialog
+                  / ========== Modal Content =====================
+                  div.modal-content
+                    div.modal-header
+                      / ======== Insert CAROUSELL here ========
+                      div id="carouselExampleControls" class="carousel slide" data-ride="carousel"
+                        div class="carousel-inner"
+                          div class="carousel-item active"
+                            / ======== Screenshot 1 ===========
+                            img class="d-block w-100" src="images/workspace/becreative.jpeg" alt="First slide"
+                          div class="carousel-item"
+                            / ======== Screenshot 2 ===========
+                            img class="d-block w-100" src="images/workspace/workspace.jpeg" alt="Second slide"
+                          div class="carousel-item"
+                            / ======== Screenshot 3 ==========
+                            img class="d-block w-100" src="images/workspace/dowhatisgreat.jpeg" alt="Third slide"
+                        / ======= Carousell left & right arrows ==================
+                        / <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                        /   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        /   <span class="sr-only">Previous</span>
+                        / </a>
+                        / <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                        /   <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        /   <span class="sr-only">Next</span>
+                        / </a>
+                      / ========= End of CAROUSELL ============
+                    div.modal-body
+                      h1.modal-project-title Title of project
+                      p.modal-project-description Description of project
+                      p.modal-project-requirements Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    div.modal-footer
+                      a.viewsite-link href="#"
+                        button.viewsite <i class="fas fa-paper-plane"></i> <span>View Site</span>
+                      button type="button" class="close" data-dismiss="modal"
+                        div.x
+                        div.x
+                  / ========== End of Modal Content =====================
+                / ============== End of Modal Dialog ===================
+              / =========== END OF MODAL ===================
+
+
+        / ============= Portfolio Item 7 ======================
+        figure.portfolio-item
+          / img.portfolio-image src="images/workspace/landingpage.jpeg" alt="portfolio item"
+          figcaption
+            div.project-description
+              h2.project-title Project Name
+              p.project-stack Ruby on Rails + PostgreSQL
+            div.project-button
+              // ============== Rmb to add class "modalBtn(#num)" to the link <a> tag below ===========
+              a.project-link#modalBtn href="#myModal7" data-toggle="modal" Learn More
+              / ============= MODAL (IMPORTANT: rmb to change the ID of #myModal!!!)========================
+              div.modal.fade#myModal7 role="dialog"
+                div.modal-dialog
+                  / ========== Modal Content =====================
+                  div.modal-content
+                    div.modal-header
+                      / ======== Insert CAROUSELL here ========
+                      div id="carouselExampleControls" class="carousel slide" data-ride="carousel"
+                        div class="carousel-inner"
+                          div class="carousel-item active"
+                            / ======== Screenshot 1 ===========
+                            img class="d-block w-100" src="images/workspace/becreative.jpeg" alt="First slide"
+                          div class="carousel-item"
+                            / ======== Screenshot 2 ===========
+                            img class="d-block w-100" src="images/workspace/workspace.jpeg" alt="Second slide"
+                          div class="carousel-item"
+                            / ======== Screenshot 3 ==========
+                            img class="d-block w-100" src="images/workspace/dowhatisgreat.jpeg" alt="Third slide"
+                        / ======= Carousell left & right arrows ==================
+                        / <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                        /   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        /   <span class="sr-only">Previous</span>
+                        / </a>
+                        / <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                        /   <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        /   <span class="sr-only">Next</span>
+                        / </a>
+                      / ========= End of CAROUSELL ============
+                    div.modal-body
+                      h1.modal-project-title Title of project
+                      p.modal-project-description Description of project
+                      p.modal-project-requirements Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    div.modal-footer
+                      a.viewsite-link href="#"
+                        button.viewsite <i class="fas fa-paper-plane"></i> <span>View Site</span>
+                      button type="button" class="close" data-dismiss="modal"
+                        div.x
+                        div.x
+                  / ========== End of Modal Content =====================
+                / ============== End of Modal Dialog ===================
+              / =========== END OF MODAL ===================
+
+
+        / ============= Portfolio Item 8 ======================
+        figure.portfolio-item
+          / img.portfolio-image src="images/workspace/landingpage.jpeg" alt="portfolio item"
+          figcaption
+            div.project-description
+              h2.project-title Project Name
+              p.project-stack Ruby on Rails + PostgreSQL
+            div.project-button
+              // ============== Rmb to add class "modalBtn(#num)" to the link <a> tag below ===========
+              a.project-link#modalBtn href="#myModal8" data-toggle="modal" Learn More
+              / ============= MODAL (IMPORTANT: rmb to change the ID of #myModal!!!)========================
+              div.modal.fade#myModal8 role="dialog"
+                div.modal-dialog
+                  / ========== Modal Content =====================
+                  div.modal-content
+                    div.modal-header
+                      / ======== Insert CAROUSELL here ========
+                      div id="carouselExampleControls" class="carousel slide" data-ride="carousel"
+                        div class="carousel-inner"
+                          div class="carousel-item active"
+                            / ======== Screenshot 1 ===========
+                            img class="d-block w-100" src="images/workspace/becreative.jpeg" alt="First slide"
+                          div class="carousel-item"
+                            / ======== Screenshot 2 ===========
+                            img class="d-block w-100" src="images/workspace/workspace.jpeg" alt="Second slide"
+                          div class="carousel-item"
+                            / ======== Screenshot 3 ==========
+                            img class="d-block w-100" src="images/workspace/dowhatisgreat.jpeg" alt="Third slide"
+                        / ======= Carousell left & right arrows ==================
+                        / <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                        /   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        /   <span class="sr-only">Previous</span>
+                        / </a>
+                        / <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                        /   <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        /   <span class="sr-only">Next</span>
+                        / </a>
+                      / ========= End of CAROUSELL ============
+                    div.modal-body
+                      h1.modal-project-title Title of project
+                      p.modal-project-description Description of project
+                      p.modal-project-requirements Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    div.modal-footer
+                      a.viewsite-link href="#"
+                        button.viewsite <i class="fas fa-paper-plane"></i> <span>View Site</span>
+                      button type="button" class="close" data-dismiss="modal"
+                        div.x
+                        div.x
+                  / ========== End of Modal Content =====================
+                / ============== End of Modal Dialog ===================
+              / =========== END OF MODAL ===================
+
+
+        / ============= Portfolio Item 9 ======================
+        figure.portfolio-item
+          / img.portfolio-image src="images/workspace/landingpage.jpeg" alt="portfolio item"
+          figcaption
+            div.project-description
+              h2.project-title Project Name
+              p.project-stack Ruby on Rails + PostgreSQL
+            div.project-button
+              // ============== Rmb to add class "modalBtn(#num)" to the link <a> tag below ===========
+              a.project-link#modalBtn href="#myModal9" data-toggle="modal" Learn More
+              / ============= MODAL (IMPORTANT: rmb to change the ID of #myModal!!!)========================
+              div.modal.fade#myModal9 role="dialog"
+                div.modal-dialog
+                  / ========== Modal Content =====================
+                  div.modal-content
+                    div.modal-header
+                      / ======== Insert CAROUSELL here ========
+                      div id="carouselExampleControls" class="carousel slide" data-ride="carousel"
+                        div class="carousel-inner"
+                          div class="carousel-item active"
+                            / ======== Screenshot 1 ===========
+                            img class="d-block w-100" src="images/workspace/becreative.jpeg" alt="First slide"
+                          div class="carousel-item"
+                            / ======== Screenshot 2 ===========
+                            img class="d-block w-100" src="images/workspace/workspace.jpeg" alt="Second slide"
+                          div class="carousel-item"
+                            / ======== Screenshot 3 ==========
+                            img class="d-block w-100" src="images/workspace/dowhatisgreat.jpeg" alt="Third slide"
+                        / ======= Carousell left & right arrows ==================
+                        / <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                        /   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        /   <span class="sr-only">Previous</span>
+                        / </a>
+                        / <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                        /   <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        /   <span class="sr-only">Next</span>
+                        / </a>
+                      / ========= End of CAROUSELL ============
+                    div.modal-body
+                      h1.modal-project-title Title of project
+                      p.modal-project-description Description of project
+                      p.modal-project-requirements Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    div.modal-footer
+                      a.viewsite-link href="#"
+                        button.viewsite <i class="fas fa-paper-plane"></i> <span>View Site</span>
+                      button type="button" class="close" data-dismiss="modal"
+                        div.x
+                        div.x
+                  / ========== End of Modal Content =====================
+                / ============== End of Modal Dialog ===================
+              / =========== END OF MODAL ===================
+
+
+
+      / a.btn.btn--primary Contact Me
+
+    / ================================= CONTACT ME ===============================
+    section.contact-me#contact
+      div.container.contact
+        div.box
+          h1.contactme-title Contact me
+          p.contactme-paragraph If you have any projects or would like to work with me, I would love to connect with you! Please fill the form below. Alternatively, you can send me an <a class="email" href="mailto:pooyisingwork@gmail.com" target="_top">email</a> or meet me in person.
+          form action="https://formspree.io/pooyisingwork@gmail.com" method="POST"
+            div
+              label.name Name
+              input type="text" name="name" id="name" required=""
+            div
+              label.email Email
+              input type="email" name="_replyto" id="email" required=""
+            div
+              label.phone Phone
+              input type="tel" name="usrtel" id="phone" required=""
+            div
+              label.message Message
+              textarea name="message" id="message" required="" rows="5"
+            input.button type="submit" name="" value="SEND"
+        div#map
+    / ================================ FOOTER ====================================
+    footer
+      div.container.grid
+        div.start
+          p.regular Find out more about me through these channels
+        / <div class="social-icons">
+        /   <img class="social-icon" src="img/twitter.svg" alt="twitter">
+        /   <img class="social-icon" src="img/instagram.svg" alt="twitter">
+        /   <img class="social-icon" src="img/github.svg" alt="twitter">
+        / </div>
+        div.social-icons
+          div.social-icon
+            <a href="#" target="_blank" title="Gmail"><i class="fas fa-envelope"></i></a>
+          div.social-icon
+            <a href="#" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          div.social-icon
+            <a class="#" href="#" target="_blank" title="Github"><i class="fab fa-github-alt"></i></a>
+          div.social-icon
+            <a href="#" target="_blank" title="Codewars"><i class="fas fa-code"></i></a>
+
+        div.end.copyright
+          p.name.highlight POO YI SING
+          p.number.highlight +(65) 92963897
+          p.number.regular ©2018
+
+        div.nav-footer
+          a.active.scroll href="#hero" Home
+          a.active.scroll href="#aboutme" About
+          a.active.scroll href="#skills" Skills
+          a.active.scroll href="#portfolio" Portfolio
+          a.active.scroll href="#contact" Contact
+
+
+    / Scripts
+    / Font awesome
+    <script defer src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script>
+    / jQuery / Popper.js / Bootstrap JS
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+    / Own Scripts
+    script src="javascript/canvas.js"
+    script src="javascript/map.js"
+    script src="javascript/modal.js"
+    script src="javascript/navbar.js"
+    script src="javascript/parallax.js"
+    script src="javascript/scroll.js"
+    script src="javascript/skillbar.js"
+    / Google Map
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBRB-HZN5usXe84LhGMAAE2t1eg907waYk&callback=initMap"></script>

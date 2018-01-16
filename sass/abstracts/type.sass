@@ -1,0 +1,23 @@
+// Font
+// $font-stack: 'Roboto', sans-serif
+$font-stack: "Raleway", sans-serif
+$font-number: 'Open Sans', sans-serif
+// Font weights
+$font-light: 300
+$font-normal: 400
+$font-bold: 700
+$font-black: 900
+
+// Font mixin
+=font($weight)
+  font-family: $font-stack
+  font-weight: $weight
+// $weight is just a placeholder name. It can be anything.
+// If I also want to change the font as well, I can do this:
+
+//    =font($font-family, $weight)
+//        font-family: $font-family
+//        font-weight: $weight
+
+//  so i replace font-family variable with the font i want to use in the "@include
+//  font($variable)" statement, e.g "@include font($font-normal)".

@@ -1,0 +1,342 @@
+// RMB never to remove the padding bottom below for .skills-points even though it looks weird with that much white space.
+section.myskills
+  padding: 20vh 0 0
+  // padding 4 values : top, right, bottom, left
+  // padding 3 values: top, right & left, bottom
+  // padding 2 values: top & bottom, right & left
+.col--full
+  // if i just use "h1" and not "h1.col--full" then it will override the h1 above in the hero section.
+    font-weight: $font-black
+    text-align: center
+  font-weight: $font-bold
+  color:  $title-color
+  font-family: $font-stack
+
+.skills-points
+  padding: 0
+
+
+.skills-point
+  display: flex
+  flex-direction: column
+  align-items: center
+  width: 90%
+  // text-align: center
+  margin: 0 auto 2.5em
+  &:first-of-type
+    margin-top: 1.5em
+
+.skills-point.others
+    margin-bottom: 5em
+
+.symbol
+  max-width: 250px
+  max-height: 250px
+
+.icons
+  @media screen and (max-width: 725px)
+    width: 80%
+    height: 80%
+.area
+  font-weight: 600
+  text-align: center
+  color: $title-color
+  font-family: $font-stack
+
+.paragraph-skills-point
+  color: $paragraph-color
+  font-family: $font-stack
+  padding: 0
+  margin-bottom: 0.75em
+
+
+.icons
+  display: flex
+  flex-wrap: wrap
+  justify-content: center
+
+  // specify the width of the icons container
+  @media only screen and (max-width: 725px)
+    width: 90%
+  // @media only screen and (min-width: 725px)
+  // width: 100%
+  // margin: 0
+  // padding: 0
+  // align-items: none !important
+  // &:nth-child(3)
+  //   margin-right: 0
+
+.javascript, .jquery, .html, .slim, .css, .sass, .bootstrap, .gimp, .inkscape, .balsamiq, .rwd, .ruby, .rails, .rspec, .postgresql, .python, .git, .heroku, .linux, .test
+  display: flex
+  flex-direction: column
+  flex-basis: 33%
+  max-height: calc(33.3% - 1000000rem)
+  max-width: calc(33.3% - 2rem)
+  margin: 1rem
+  padding: 0
+  justify-content: center
+  align-items: center
+  color: blue
+
+    // img, svg
+      // width: 100%
+      // // max-width: 100%
+      // // overflow: hidden
+      // height: 5em
+      // max-height: 5em
+.description
+  margin-top: 0.75em
+  font-weight: 600
+  color: $title-color
+  span
+    font-family: $font-number
+
+
+
+
+// ============ Responsive Layout for Non-Mobile devices ==========================
+// ======== SKILLS POINTS ===========
+
+@media only screen and (max-width: 900px) and (min-width: 400px)
+  section.myskills
+    display: flex
+    flex-direction: column
+    max-width: 1500px
+    width: 100%
+    align-items: center
+    margin: 0 auto
+  .skills-points
+    width: 80%
+  .symbol
+    max-height: 300px
+    max-width: 300px
+  .icons
+    display: flex
+    justify-content: center
+
+
+// ====== Icons Layout =================
+@media only screen and (max-width: 500px) and (min-width: 400px)
+  .icons
+    img
+      max-height: 65px
+      max-width: 65px
+
+@media only screen and (max-width: 600px) and (min-width: 500px)
+  .icons
+    img
+      max-height: 75px
+      max-width: 75px
+
+@media only screen and (max-width: 700px) and (min-width: 600px)
+  .icons
+    img
+      max-height: 85px
+      max-width: 85px
+
+@media only screen and (max-width: 800px) and (min-width: 700px)
+  .icons
+    img
+      max-height: 95px
+      max-width: 95px
+
+@media only screen and (max-width: 900px) and (min-width: 800px)
+  .icons
+    img
+      max-height: 105px
+      max-width: 105px
+// ============= End ======================
+
+
+
+// ======== SKILL POINTS Layout ===================
+@media only screen and (max-width: 1024px) and (min-width: 900px)
+  section.myskills
+    display: flex
+    flex-direction: column
+    max-width: 1500px
+    width: 100%
+    align-items: center
+    margin: 0 auto
+  div.skills-points
+    display: flex
+    flex-direction: row
+    width: 90%
+    justify-content: center
+  .skills-point
+    display: flex
+    flex-direction: column
+    flex: 1 1 33.3%
+    padding: 0 1em
+    &:first-of-type
+      margin-top: 0
+      padding-left: 0
+    &:last-of-type
+      padding-right: 0
+  .paragraph-skills-point
+    height: 160px
+    max-height: 1000px
+    overflow-wrap: break-word
+    margin: 0
+
+
+@media only screen and (max-width: 1300px) and (min-width: 1024px)
+  section.myskills
+    display: flex
+    flex-direction: column
+    max-width: 1500px
+    width: 100%
+    align-items: center
+    margin: 0 auto
+  div.skills-points
+    display: flex
+    flex-direction: row
+    width: 80%
+    justify-content: center
+  .skills-point
+    display: flex
+    flex-direction: column
+    flex: 1 1 33.3%
+    padding: 0 3em
+    &:first-of-type
+      margin-top: 0
+      padding-left: 0
+    &:last-of-type
+      padding-right: 0
+  .paragraph-skills-point
+    height: 150px
+    max-height: 1000px
+    overflow-wrap: break-word
+    margin: 0
+
+@media only screen and (min-width: 1300px)
+  section.myskills
+    display: flex
+    flex-direction: column
+    max-width: 1500px
+    width: 100%
+    align-items: center
+    margin: 0 auto
+  div.skills-points
+    display: flex
+    flex-direction: row
+    width: 80%
+    justify-content: center
+  .skills-point
+    display: flex
+    flex-direction: column
+    flex: 1 1 33.3%
+    padding: 0 3em
+    &:first-of-type
+      margin-top: 0
+      padding-left: 0
+    &:last-of-type
+      padding-right: 0
+  .paragraph-skills-point
+    height: 140px
+    max-height: 1000px
+    overflow-wrap: break-word
+    margin: 0
+
+
+// ============ SKILLBAR GRAPH =========
+.skillbar
+  position: relative
+  display: block
+  margin-bottom: 15px
+  width: 100%
+  background: #eee
+  height: 35px
+  border-radius: 3px
+  transition: 0.1s linear
+  transition-property: width, background-color
+
+  .skillbar-title
+    position: absolute
+    top: 0
+    left: 0
+    width: 110px
+    font-weight: bold
+    font-size: 13px
+    color: #ffffff
+    background: #6adcfa
+    border-top-left-radius: 3px
+    border-bottom-left-radius: 3px
+
+  .skillbar-title
+    span
+      display: block
+      background: rgba(0, 0, 0, 0.1)
+      padding: 0 20px
+      height: 35px
+      line-height: 35px
+      border-top-left-radius: 3px
+      border-bottom-left-radius: 3px
+
+
+
+  .skillbar-bar
+    height: 35px
+    width: 0px
+    background: #6adcfa
+    border-radius: 3px
+
+  .skill-bar-percent
+    position: absolute
+    right: 10px
+    top: 0
+    font-size: 11px
+    height: 35px
+    line-height: 35px
+    color: #ffffff
+    color: rgba(0, 0, 0, 0.4)
+    span
+      font-family: $font-number
+
+// ========= SKILLBAR Layout =====================
+@media only screen and (max-width: 400px)
+  .skillbargrid
+    margin: 0 auto
+    width: 95%
+
+@media only screen and (max-width: 600px) and (min-width: 400px)
+  .skillbargrid
+    margin: 0 auto
+    width: 90%
+
+@media only screen and (max-width: 900px) and (min-width: 600px)
+  .skillbargrid
+    margin: 0 auto
+    width: 80%
+
+
+// ============== 3 columns above =============
+@media only screen and (max-width: 1024px) and (min-width: 900px)
+  .skillbargrid
+    margin: 0 auto
+    width: 90%
+
+@media only screen and (max-width: 1030px) and (min-width: 1024px)
+  .skillbargrid
+    margin: 0 auto
+    width: 95%
+
+@media only screen and (max-width: 1080px) and (min-width: 1030px)
+  .skillbargrid
+    margin: 0 auto
+    width: 90%
+
+@media only screen and (max-width: 1150px) and (min-width: 1080px)
+  .skillbargrid
+    margin: 0 auto
+    width: 87%
+
+@media only screen and (max-width: 1300px) and (min-width: 1150px)
+  .skillbargrid
+    margin: 0 auto
+    width: 80%
+
+@media only screen and  (min-width: 1300px)
+  .skillbargrid
+    margin: 0 auto
+    width: 80%

@@ -1,0 +1,365 @@
+.projects.cta
+  padding: 20vh 0 20vh
+  h1
+    color: $title-color
+    font-weight: $font-bold
+    font-size: 2.5rem
+  p
+    color: $paragraph-color
+    font-size: 12px
+    margin-bottom: 5vh
+
+// ============== PORTFOLIO ITEMS ==================
+.portfolio-items
+  /* This mixin below will control the width to whatever you want it to be. */
+  // +container($max-width: 75em)
+
+// ================= PORTFOLIO ITEM ===============
+.portfolio-item
+  // Note: Images are inline block, so they have a margin or padding. To get rid of it, you can do either display: block or like how i did it below.
+  padding: 0
+  margin: 0
+  // height: 100%
+  height: 240px
+  position: relative
+  overflow: hidden
+  // flex: 1 1 20rem
+  img
+    display: block
+    width: 100%
+
+.portfolio-item figcaption
+  position: absolute
+  top: 0
+  bottom: 0
+  right: 0
+  left: 0
+  text-align: center
+  display: flex
+  flex-direction: column
+  &:hover, &:focus
+    transition: all ease-in-out 250ms
+    background: rgba($white, 1)
+    .project-description
+      position: absolute
+      top: 24%
+      text-align: center
+      left: 0
+      right: 0
+    .project-button
+      position: absolute
+      bottom: 24%
+      right: 0
+      left: 0
+
+.project-description
+  position: absolute
+  top: -100%
+  // to make it out of the image i used top: -100%
+  text-align: center
+  left: 0
+  right: 0
+
+.project-button
+  position: absolute
+  bottom: -100%
+  // to make it out of the image i used bottom: -100%
+  right: 0
+  left: 0
+
+h2.project-title
+  font-weight: $font-bold
+
+h2.project-title, a.project-link
+  color: $black
+  // font-weight: $font-bold
+  // font-size: 2vh (rmb to make the font responsive!!)
+
+.project-stack
+  color: #E31B6D
+
+.project-button
+  display: inline-block
+
+a.project-link
+  padding: 0.75em 2.5em
+  border-radius: 0
+  text-transform: uppercase
+  text-decoration: none
+  cursor: pointer
+  background: $white
+  border: 2px solid #E31B6D
+  font-family: Arial
+  transition: all 0.3s ease-in-out
+  &:hover, &:focus
+    background: #E31B6D
+    color: $white
+
+
+
+
+// ===== Using BACKGROUND IMAGES for grid ================
+.portfolio-item:nth-of-type(1)
+  background: url("../images/workspace/domenico-loia-310197.jpg")
+  background-position: center center
+  background-size: cover
+  background-repeat: no-repeat
+
+.portfolio-item:nth-of-type(2)
+  background: url("../images/workspace/domenico-loia-310197.jpg")
+  background-position: center center
+  background-size: cover
+  background-repeat: no-repeat
+
+.portfolio-item:nth-of-type(3)
+  background: url("../images/workspace/farzad-nazifi-71686.jpg")
+  background-position: center center
+  background-size: cover
+  background-repeat: no-repeat
+
+.portfolio-item:nth-of-type(4)
+  background: url("../images/workspace/landingpage.jpg")
+  background-position: center center
+  background-size: cover
+  background-repeat: no-repeat
+
+.portfolio-item:nth-of-type(5)
+  background: url("../images/grid-icon/javascript.svg.png")
+  background-position: center center
+  background-size: cover
+  background-repeat: no-repeat
+
+.portfolio-item:nth-of-type(6)
+  background: url("../images/laptop-keyboard/keyboard.jpg")
+  background-position: center center
+  background-size: cover
+  background-repeat: no-repeat
+
+.portfolio-item:nth-of-type(7)
+  background: url("../images/laptop-keyboard/whitekeyboard.jpg")
+  background-position: center center
+  background-size: cover
+  background-repeat: no-repeat
+
+.portfolio-item:nth-of-type(8)
+  background: url("../images/laptop-keyboard/macbook.jpeg")
+  background-position: center center
+  background-size: cover
+  background-repeat: no-repeat
+
+.portfolio-item:nth-of-type(9)
+  background: url("../images/laptop-keyboard/Macbook-PNG-Photos.png")
+  background-position: center center
+  background-size: cover
+  background-repeat: no-repeat
+
+
+
+
+
+
+// ======= Responsive Non Mobile Layout =======
+@media screen and (min-width: 400px)
+  .portfolio-items
+    display: flex
+    flex-wrap: wrap
+    // justify-content: center
+
+@media screen and (max-width: 500px) and (min-width: 400px)
+  .portfolio-items
+    display: flex
+    flex-wrap: wrap
+    // justify-content: center
+    max-width: 1200px
+    margin: 0
+
+@media screen and (max-width: 600px) and (min-width: 500px)
+  .portfolio-items
+    display: flex
+    flex-wrap: wrap
+    // justify-content: center
+    max-width: 1200px
+    margin: 0 1rem
+
+@media screen and (max-width: 800px) and (min-width: 600px)
+  .portfolio-items
+    display: flex
+    flex-wrap: wrap
+    // justify-content: center
+    max-width: 1200px
+    margin: 0 2rem
+
+@media screen and (max-width: 1000px) and (min-width: 800px)
+  .portfolio-items
+    display: flex
+    flex-wrap: wrap
+    // justify-content: center
+    max-width: 1200px
+    margin: 0 2rem
+
+@media screen and (max-width: 1300px) and (min-width: 1000px)
+  .portfolio-items
+    display: flex
+    flex-wrap: wrap
+    // justify-content: center
+    max-width: 1200px
+    margin: 0 4rem
+
+@media screen and (max-width: 1500px) and (min-width: 1300px)
+  .portfolio-items
+    max-width: 1200px
+    margin: 0 4rem
+
+@media screen and (min-width: 1500px)
+  .portfolio-items
+    max-width: 1200px
+    margin: 0 auto
+
+// ===== Portfolio Item Responsive Layout =========
+@media screen and (max-width: 500px)
+  .portfolio-item
+    width: 100vw
+    height: 240px
+    max-width: 100%
+
+
+@media screen and (max-width: 800px) and (min-width: 500px)
+  .portfolio-item
+    width: 300px
+    height: 300px
+    // max-width: 100%
+
+    box-sizing: border-box
+    // padding: 1rem
+    margin: 0.5rem
+    box-shadow: 1px 2px 4px 2px rgba(160, 160, 160, 0.5)
+    flex-basis: calc(50% - 1rem)
+
+
+@media screen and (max-width: 1300px) and (min-width: 800px)
+  .portfolio-item
+    width: 300px
+    height: 300px
+    // max-width: 100%
+
+    box-sizing: border-box
+    // padding: 1rem
+    margin: 0.5rem
+    box-shadow: 1px 2px 4px 2px rgba(160, 160, 160, 0.5)
+    flex-basis: calc((100% / 3) - 1rem)
+
+
+@media only screen and (min-width: 1300px)
+  .portfolio-item
+    width: 300px
+    height: 300px
+    // max-width: 100%
+
+    box-sizing: border-box
+    // padding: 1rem
+    margin: 0.5rem
+    box-shadow: 1px 2px 4px 2px rgba(160, 160, 160, 0.5)
+    flex-basis: calc((100% / 4) - 1rem)
+
+
+
+
+
+
+// ==== Portfolio Items using GRID ================
+// .container.portfolio-items
+//   max-width: 1200px
+//   width: 90%
+//   box-sizing: border-box
+//   display: flex
+//   position: relative
+//   flex-wrap: wrap
+//   flex: 1 1 auto
+//   justify-content: center
+//   padding: 0
+//   margin: 0 auto
+//
+// .portfolio-item
+//   &:last-child
+//     position: absolute
+//     float: left
+
+
+/* define the number of grid columns */
+// grid-template-columns: repeat(12, 1fr)
+// grid-template-columns: repeat( 12, minmax(250px, 1fr) )
+// grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) )
+
+// @media screen and (max-width: 800px) and (min-width: 400px)
+//   .portfolio-items
+//     display: grid
+//     // grid-gap: 3em
+//     // width: 80%
+//     max-width: 800px
+//     // margin: 0 auto
+//     grid-template-columns: repeat( auto-fit, minmax(376px, 2fr) )
+//     // justify-items: center
+//     // grid-row-gap: 10px
+//     // grid-column-gap: 10px
+//
+// @media only screen and (max-width: 1200px) and (min-width: 800px)
+//   .portfolio-items
+//     display: grid
+//     // grid-gap: 3em
+//     // width: 80%
+//     max-width: 1200px
+//     // margin: 0 auto
+//     grid-template-columns: repeat( auto-fit, minmax(376px, 3fr) )
+//     // justify-items: center
+//     // grid-row-gap: 10px
+//     // grid-column-gap: 10px
+//
+// @media only screen and (max-width: 1500px) and (min-width: 1200px)
+//   .portfolio-items
+//     display: grid
+//     // grid-gap: 3em
+//     // width: 80%
+//     max-width: 1200px
+//     // margin: 0 auto
+//     grid-template-columns: repeat( auto-fit, minmax(390px, 3fr) )
+//     // justify-items: center
+//     // grid-row-gap: 10px
+//     // grid-column-gap: 10px
+//
+// @media only screen and (min-width: 1500px)
+//   .portfolio-items
+//     display: grid
+//     // grid-gap: 3em
+//     // width: 80%
+//     max-width: 1200px
+//     // margin: 0 auto
+//     grid-template-columns: repeat( auto-fit, minmax(390px, 3fr) )
+//     // justify-items: center
+//     // grid-row-gap: 10px
+//     // grid-column-gap: 10px
+
+
+// Grid Layouts
+// @supports (display:grid)
+//   .portfolio-items
+//     display: grid
+    // grid-template-columns: repeat(2, 1fr)
+    // this makes 2 equal columns of the same width.
+
+    // grid-gap: 1em
+    // this will make all the items in the grid have a margin of 1em.
+
+    // .portfolio-item.featured
+    //   grid-column: 1 / span 2
+    // this makes the item with class of "featured" to cover 2 columns instead of 1 column; twice as big. "1" is to start in the first column.
+
+    //  grid-row: 1 / span 2
+    //  this makes the item with class of "featured" to cover 2 rows instead of 1 column; twice as big. "1" is to start in the first row.
+
+    // if combined together, it will mean the item with "featured" class attached will start at the LEFT & TOP.
+
+    //.featured
+        .project-title
+          font-size: 5rem
+        .project-stack
+          display: block

@@ -1,0 +1,166 @@
+// *
+//   box-sizing: border-box
+//
+// body
+//   margin: 0
+//   font-family: 'Raleway', sans-serif
+//   text-align: center
+
+
+// ================ Header ===============
+
+// header
+//   position: absolute
+//
+// nav ul
+//   margin: 0
+//   padding: 0
+//   list-style: none
+//
+// nav li
+//   display: inline-block
+//   margin: 1em
+//
+// nav a
+//   font-weight: 900
+//   text-decoration: none
+//   text-transform: uppercase
+//   font-size: 0.8rem
+//   padding: 0.5em
+
+@media screen and (min-width: 690px)
+  .container.landingpage
+    width: 75%
+
+
+section.landingpage.parallax--bg
+  // background-image: url("landingpage.jpg")
+  background-size: cover
+  background-position: center
+  width: 100vw
+  height: 100vh
+  padding: 0
+  margin: 0
+  box-sizing: border-box
+
+  position: relative
+  overflow-y: hidden
+
+
+  canvas.canvas
+    position: absolute
+    top: 0
+    left: 0
+
+  .container
+    display: flex
+    flex-direction: column
+    padding: 0
+    margin: 0
+    left: 50%
+    top: 50%
+    align-items: center
+    position: absolute
+    margin: 0 auto
+    transform: translate(-50%, -50%)
+
+    .title.parallax
+      color: $white
+      font-family: 'Playfair Display', serif
+      text-transform: none
+      font-weight: 400
+      margin-bottom: 8px
+
+    .caption.parallax
+      color: $white
+      font-family: 'Montserrat', sans-serif
+      text-transform: none
+      font-weight: 700
+      letter-spacing: 1px
+      span
+        font-family: 'Montserrat', sans-serif
+        font-weight: 700
+        font-style: italic
+        letter-spacing: 1px
+
+      // margin-bottom: 100px
+  .btn.down
+    display: flex
+    justify-content: center
+    align-items: center
+    position: absolute
+    margin: 0 auto
+    top: 80%
+    left: 50%
+    transform: translate(-50%, -50%)
+    padding: 0
+    color: $white
+    text-decoration: none
+    width: 49px
+    height: 49px
+    border: 2px solid $white
+    border-radius: 100%
+
+    font-size: 20px
+
+// ==================== h1 =========================
+@media only screen and (max-width: 690px)
+  .title.parallax
+    font-size: 45px !important
+    line-height: 49.5px !important
+
+@media only screen and (max-width: 1000px) and (min-width: 690px)
+  .title.parallax
+    font-size: 70px !important
+    line-height: 74px !important
+
+@media only screen and (max-width: 1300px) and (min-width: 1000px)
+  .title.parallax
+    font-size: 85px !important
+    line-height: 93.5px !important
+
+@media only screen and (max-width: 1500px) and (min-width: 1300px)
+  .title.parallax
+    font-size: 90px !important
+    line-height: 99px !important
+
+@media only screen and (min-width: 1500px)
+  .title.parallax
+    font-size: 100px !important
+    line-height: 110px !important
+
+
+
+// ====================== h2 =======================
+@media only screen and (max-width: 690px)
+  .caption.parallax
+    font-size: 12.6px !important
+    line-height: 28px !important
+
+@media only screen and (max-width: 1000px) and (min-width: 690px)
+  .caption.parallax
+    font-size: 16.2px !important
+    line-height: 36px !important
+
+@media only screen and (max-width: 1300px) and (min-width: 1000px)
+  .caption.parallax
+    font-size: 18px !important
+    line-height: 40px !important
+
+@media only screen and (max-width: 1500px) and (min-width: 1300px)
+  .caption.parallax
+    font-size: 28px !important
+    line-height: 40px !important
+
+@media only screen and (min-width: 1500px)
+  .caption.parallax
+    font-size: 28px !important
+    line-height: 40px !important
+
+  // border: 2px solid black
+  // background: black
+  // display: block
+
+
+
+  // background: url("guest_loginpage_background_1"),
