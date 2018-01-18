@@ -409,7 +409,7 @@ html lang="en"
           / img.portfolio-image src="images/workspace/landingpage.jpeg" alt="portfolio item"
           figcaption
             div.project-description
-              h2.project-title SGAG API
+              h2.project-title Social Media Aggregator
               p.project-stack Ruby on Rails + PostgreSQL
             div.project-button
               // ============== Rmb to add class "modalBtn(#num)" to the link <a> tag below ===========
@@ -421,17 +421,38 @@ html lang="en"
                   div.modal-content
                     div.modal-header
                       / ======== Insert CAROUSELL here ========
-                      div id="carouselExampleControls" class="carousel slide" data-ride="carousel"
+                      div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="2000"
                         div class="carousel-inner"
                           div class="carousel-item active"
                             / ======== Screenshot 1 ===========
-                            img class="d-block w-100" src="images/workspace/becreative.jpeg" alt="First slide"
+                            img class="d-block w-100" src="images/project-screenshots/sgag/sgag1.png" alt="First slide"
                           div class="carousel-item"
                             / ======== Screenshot 2 ===========
-                            img class="d-block w-100" src="images/workspace/workspace.jpeg" alt="Second slide"
+                            img class="d-block w-100" src="images/project-screenshots/sgag/sgag2.png" alt="Second slide"
                           div class="carousel-item"
                             / ======== Screenshot 3 ==========
-                            img class="d-block w-100" src="images/workspace/dowhatisgreat.jpeg" alt="Third slide"
+                            img class="d-block w-100" src="images/project-screenshots/sgag/sgag3.png" alt="Third slide"
+                          div class="carousel-item"
+                            / ======== Screenshot 4 ==========
+                            img class="d-block w-100" src="images/project-screenshots/sgag/sgag4.png" alt="Fourth slide"
+                          div class="carousel-item"
+                            / ======== Screenshot 5 ==========
+                            img class="d-block w-100" src="images/project-screenshots/sgag/sgag5.png" alt="Fifth slide"
+                          div class="carousel-item"
+                            / ======== Screenshot 6 ==========
+                            img class="d-block w-100" src="images/project-screenshots/sgag/sgag6.png" alt="Sixth slide"
+                          div class="carousel-item"
+                            / ======== Screenshot 7 ==========
+                            img class="d-block w-100" src="images/project-screenshots/sgag/sgag7.png" alt="Seventh slide"
+                          div class="carousel-item"
+                            / ======== Screenshot 8 ==========
+                            img class="d-block w-100" src="images/project-screenshots/sgag/sgag8.png" alt="Eighth slide"
+                          div class="carousel-item"
+                            / ======== Screenshot 9 ==========
+                            img class="d-block w-100" src="images/project-screenshots/sgag/sgag9.png" alt="Ninth slide"
+                          div class="carousel-item"
+                            / ======== Screenshot 10 ==========
+                            img class="d-block w-100" src="images/project-screenshots/sgag/sgag10.png" alt="Tenth slide"
                         / ======= Carousell left & right arrows ==================
                         / <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
                         /   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -443,12 +464,12 @@ html lang="en"
                         / </a>
                       / ========= End of CAROUSELL ============
                     div.modal-body
-                      h1.modal-project-title Title of project
-                      p.modal-project-description Description of project
-                      p.modal-project-requirements Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    div.modal-footer
-                      a.viewsite-link href="#"
-                        button.viewsite <i class="fas fa-paper-plane"></i> <span>View Site</span>
+                      h1.modal-project-title Social Media Aggregator
+                      p.modal-project-description <strong> A corporate project done with two other coursemates during my bootcamp for a local social media company. They approached us with their problem of the delivery of performance reports of their memes and videos for their clients. Their reports were generated manually and it took them an average of 2 to 3 hours per day. To improve their efficiency, we created an automated statistical reporting application that can be used by their clients and staff to monitor performance in real time. <br><br>Due to non disclosure agreement, I am unable to provide access to the application. </strong>
+                      p.modal-project-requirements Technical Requirements <br> Super Admin <br> &bull; Able to assign super admin to user admin <br> &bull; Able to create/destroy user admin <br> &bull; Able to reassign clients to another user admin <br> &bull; Able to create trade category for clients <br> &bull; Able to destroy clients <br> &bull; Able to do everything that user admin can do <br><br> User Admin <br> &bull; Able to create/edit/update clients under his portfolio <br> &bull; Able to create/edit/update campaigns for clients <br> &bull; Able to assign categories to clients <br> &bull; Able to create/update/destroy posts for clients <br> &bull; Able to create/update/destroy benchmarks for clients <br> &bull; Able to get insights from Facebook API for posts <br> &bull; Able to see a dashboard of all clients, their campaigns and posts <br> &bull; Able to see a dashboard for individual client, his campaigns and posts <br> &bull; Able to see the status of a campaign progress & the deliverables status <br> &bull; Able to do/see everything a client can do/see <br><br> Client <br> &bull; Able to see a dashboard of all his campaigns' stats & benchmarks <br> &bull; Able to click into one campaign and see stats & benchmarks <br> &bull; Able to click into an individual post and see stats & benchmarks
+                    div.modal-footer.nobutton
+                      / a.viewsite-link href="#"
+                      /   button.viewsite <i class="fas fa-paper-plane"></i> <span>View Site</span>
                       button type="button" class="close" data-dismiss="modal"
                         div.x
                         div.x
@@ -478,16 +499,16 @@ html lang="en"
                         div class="carousel-inner"
                           div class="carousel-item active"
                             / ======== Screenshot 1 ===========
-                            img class="d-block w-100" src="images/project-screenshots/connectfour1.png" alt="First slide"
+                            img class="d-block w-100" src="images/project-screenshots/connectfour/connectfour1.png" alt="First slide"
                           div class="carousel-item"
                             / ======== Screenshot 2 ===========
-                            img class="d-block w-100" src="images/project-screenshots/connectfour2.png" alt="Second slide"
+                            img class="d-block w-100" src="images/project-screenshots/connectfour/connectfour2.png" alt="Second slide"
                           div class="carousel-item"
                             / ======== Screenshot 3 ==========
-                            img class="d-block w-100" src="images/project-screenshots/connectfour3.png" alt="Third slide"
+                            img class="d-block w-100" src="images/project-screenshots/connectfour/connectfour3.png" alt="Third slide"
                           div class="carousel-item"
                             / ======== Screenshot 4 ==========
-                            img class="d-block w-100" src="images/project-screenshots/connectfour4.png" alt="Fourth slide"
+                            img class="d-block w-100" src="images/project-screenshots/connectfour/connectfour4.png" alt="Fourth slide"
                         / ======= Carousell left & right arrows ==================
                         / <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
                         /   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -501,7 +522,7 @@ html lang="en"
                     div.modal-body
                       h1.modal-project-title Connect Four
                       p.modal-project-description <strong>A two player game. Winner wins by connecting either horizontally/vertically/diagonally four discs of the same color together.</strong>
-                      p.modal-project-requirements This is a project that I did after the bootcamp to explore things which were not taught or used much during my Bootcamp - Javascript and Algorithms. I decided to create a game because I like developing games. I chose ConnectFour because it was my favourite childhood game. The code is written in vanilla Javascript. An AI function will be implemented in the future when I possess more knowledge on it.
+                      p.modal-project-requirements This is a project that I did after the bootcamp to explore things which were not taught or used much during my Bootcamp - Javascript and Algorithms. I decided to create a game because I like developing games. I chose Connect Four because it was my favourite childhood game. The code is written in vanilla Javascript. An AI function will be implemented in the future when I possess more knowledge on it.
                     div.modal-footer
                       a.viewsite-link href="https://peterpooyising.github.io/ConnectFour/"
                         button.viewsite <i class="fas fa-paper-plane"></i> <span>Play</span>

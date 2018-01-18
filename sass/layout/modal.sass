@@ -1,7 +1,6 @@
 // If "tinted" modal page shows up and does not allow any interactivity, uncomment the 2 lines of code below:
 // body.modal-open div.modal-backdrop
 //   z-index: 0
-.pro
 
 .modal-header
   padding: 0
@@ -27,6 +26,13 @@ p.modal-project-requirements
   display: flex
   justify-content: space-between
   padding: 2vh 25px 2vh 25px
+  border: none
+
+.modal-footer.nobutton
+  justify-content: flex-end
+  .close
+    height: 1em
+    padding-bottom: 0.5em
 
 .viewsite
   box-sizing: border-box
@@ -59,6 +65,10 @@ p.modal-project-requirements
     -webkit-transform: rotate(45deg)
   .x:last-child
     -webkit-transform: rotate(-45deg)
+
+// ================= Project screenshots =================
+
+
 
 // ====== Responsive Layout ====================
 @media only screen and (max-width: 400px)

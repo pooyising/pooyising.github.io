@@ -111,14 +111,23 @@ a.project-link
   background-size: cover
   background-repeat: no-repeat
 
+
+
 .portfolio-item:nth-of-type(3)
-  background: url("../images/workspace/farzad-nazifi-71686.jpg")
+  background: url("../images/project-screenshots/sgag/sgag-cover.png")
   background-position: center center
-  background-size: cover
+  background-size: contain.
   background-repeat: no-repeat
 
+@media screen and (min-width: 400px)
+  .portfolio-item:nth-of-type(3)
+    background: url("../images/project-screenshots/sgag/sgag1.png")
+    background-size: cover
+
+
+
 .portfolio-item:nth-of-type(4)
-  background: url("../images/project-screenshots/connectfour-cover.png")
+  background: url("../images/project-screenshots/connectfour/connectfour-cover.png")
   background-position: center center
   background-size: cover
   background-repeat: no-repeat
