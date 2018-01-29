@@ -1,3 +1,8 @@
+.points
+  display: flex
+  justify-content: center
+  align-items: center
+
 .projects.cta
   padding: 20vh 0 20vh
   h1
@@ -8,6 +13,9 @@
     color: $paragraph-color
     font-size: 12px
     margin-bottom: 5vh
+
+.title-large
+  font-size: 2.5rem
 
 // ============== PORTFOLIO ITEMS ==================
 .portfolio-items
@@ -67,8 +75,8 @@
   right: 0
   left: 0
 
-.projects.cta h1
-  font-size: 1.5em
+// .projects.cta h1
+//   font-size: 1.5em
 
 h2.project-title
   font-weight: $font-bold
@@ -103,10 +111,14 @@ a.project-link
 
 // ===== Using BACKGROUND IMAGES for grid ================
 .portfolio-item:nth-of-type(1)
-  background: url("../images/workspace/domenico-loia-310197.jpg")
-  background-position: center center
-  background-size: cover
+  background: url("../images/project-screenshots/dragontweet/dragontweet-cover.png")
+  background-position: right
+  background-size: contain
   background-repeat: no-repeat
+
+@media screen and (min-width: 600px)
+  .portfolio-item:nth-of-type(1)
+    background-size: cover
 
 .portfolio-item:nth-of-type(2)
   background: url("../images/project-screenshots/gundamfactory/gundam-cover.png")

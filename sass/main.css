@@ -590,6 +590,13 @@ a.active {
 .hero-img {
   display: none; }
 
+.text-intro {
+  font-size: 1rem; }
+
+@media screen and (min-width: 1300px) {
+  .text-intro {
+    font-size: 1.2rem; } }
+
 @media (min-width: 750px) {
   section.hero#hero div.container.grid {
     display: -webkit-box;
@@ -1149,7 +1156,7 @@ p.paragraph {
   font-weight: 700; }
 
 p.paragraph {
-  font-size: 1.2rem; }
+  font-size: 1rem; }
 
 a.btn.btn--secondary {
   font-size: 1.2rem;
@@ -1182,6 +1189,10 @@ a.btn.btn--secondary {
 @media screen and (min-width: 690px) {
   .middle-box {
     display: inline-block; } }
+
+@media screen and (min-width: 1300px) {
+  .paragraph {
+    font-size: 1.2rem; } }
 
 @media only screen and (max-width: 690px) {
   div.col.bg-main {
@@ -1358,6 +1369,17 @@ a.btn.btn--secondary {
     width: 100%;
     height: inherit; } }
 
+.points {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
 .projects.cta {
   padding: 20vh 0 20vh; }
   .projects.cta h1 {
@@ -1368,6 +1390,9 @@ a.btn.btn--secondary {
     color: #616161;
     font-size: 12px;
     margin-bottom: 5vh; }
+
+.title-large {
+  font-size: 2.5rem; }
 
 .portfolio-items {
   /* This mixin below will control the width to whatever you want it to be. */ }
@@ -1426,9 +1451,6 @@ a.btn.btn--secondary {
   right: 0;
   left: 0; }
 
-.projects.cta h1 {
-  font-size: 1.5em; }
-
 h2.project-title {
   font-weight: 700; }
 
@@ -1458,10 +1480,14 @@ a.project-link {
     color: white; }
 
 .portfolio-item:nth-of-type(1) {
-  background: url("../images/workspace/domenico-loia-310197.jpg");
-  background-position: center center;
-  background-size: cover;
+  background: url("../images/project-screenshots/dragontweet/dragontweet-cover.png");
+  background-position: right;
+  background-size: contain;
   background-repeat: no-repeat; }
+
+@media screen and (min-width: 600px) {
+  .portfolio-item:nth-of-type(1) {
+    background-size: cover; } }
 
 .portfolio-item:nth-of-type(2) {
   background: url("../images/project-screenshots/gundamfactory/gundam-cover.png");
