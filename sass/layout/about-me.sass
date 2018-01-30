@@ -110,15 +110,15 @@ a.btn.btn--secondary
     display: flex
     flex-wrap: wrap
     flex: 1 1 auto
-    height: 800px
+    height: 600px
     // max-height: max-content
 
-@media only screen and (max-width: 1000px) and (min-width: 690px)
-  div.col.bg-main
-    display: flex
-    flex-wrap: wrap
-    flex: 1 1 auto
-    height: 800px
+// @media only screen and (max-width: 1000px) and (min-width: 690px)
+//   div.col.bg-main
+//     display: flex
+//     flex-wrap: wrap
+//     flex: 1 1 auto
+//     height: 800px
     // max-height: max-content
 
 @media only screen and (max-width: 1300px) and (min-width: 1000px)
@@ -126,7 +126,7 @@ a.btn.btn--secondary
     display: flex
     flex-wrap: wrap
     flex: 1 1 auto
-    height: 650px
+    height: 600px
     // max-height: max-content
 
 @media only screen and (max-width: 1500px) and (min-width: 1300px)
@@ -170,9 +170,16 @@ a.btn.btn--secondary
     align-items: center
     justify-content: center
     height: inherit
+    // padding-top: 0
     // padding: 2.5em
 
-
+@media screen and (min-width: 1300px)
+  .col.paragraph
+    padding: 0em 5em
+  .paragraph
+    margin-bottom: 2em !important
+  .bg-main
+    height: 500px !important
 
 // ======== Image Responsive Layout ==========
 @media screen and (min-width: 690px)

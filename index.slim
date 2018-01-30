@@ -4,27 +4,29 @@ html lang="en"
     meta charset="utf-8"
     meta name="viewport" content="width=device-width, initial-scale=1"
     title Yi Sing | Web Designer & Developer
+    link rel="shortcut icon" type="image/jpg" href="images/flavicon/YS.jpg"
+    link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"
     link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous"
     link rel="stylesheet" href="sass/main.css"
 
   body
     / ============================ Main Navigation Bar + Logo ====================
-    header.main-header
-      div.container.grid
-        nav.main-nav
-          ul.unstyled-list
-            li
-              a.active.scroll href="#hero" Home
-            li
-              a.active.scroll href="#aboutme" About
-            li
-              a.active.scroll href="#skills" Skills
-            li
-              a.active.scroll href="#portfolio" Portfolio
-            li
-              a.active.scroll href="#contact" Contact
-        div.nav-toggle
-          div.hamburger
+    / header.main-header
+    /   div.container.grid
+    /     nav.main-nav
+    /       ul.unstyled-list
+    /         li
+    /           a.active.scroll href="#hero" Home
+    /         li
+    /           a.active.scroll href="#aboutme" About
+    /         li
+    /           a.active.scroll href="#skills" Skills
+    /         li
+    /           a.active.scroll href="#portfolio" Portfolio
+    /         li
+    /           a.active.scroll href="#contact" Contact
+    /     div.nav-toggle
+    /       div.hamburger
 
 
     / =============================== Landing page ===========================
@@ -35,9 +37,27 @@ html lang="en"
       div.container.landingpage
         h1.title.parallax Full Stack Web Developer
         h2.caption.parallax turning <span>IDEAS</span> into <span>REALITY</span>
-      a.btn.down.scroll href="#hero"
+      a.btn.down.scroll href="#nav"
         <i class="fa fa-angle-down" aria-hidden="true"></i>
 
+
+    / =============================== Navbar =====================================
+    nav#nav class="navbar navbar-expand-lg navbar-light bg-light"
+      button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation"
+        span class="navbar-toggler-icon"
+
+      div class="collapse navbar-collapse" id="navbarTogglerDemo03"
+        ul class="navbar-nav mr-auto mt-2 mt-lg-0"
+          li class="nav-item"
+            a class="nav-link scroll" href="#nav" Home
+          li class="nav-item"
+            a class="nav-link scroll" href="#aboutme" About
+          li class="nav-item"
+            a class="nav-link scroll" href="#skills" Skills
+          li class="nav-item"
+            a class="nav-link scroll" href="#portfolio" Portfolio
+          li class="nav-item"
+            a class="nav-link scroll" href="#contact" Contact
 
     / ================ Hero area (Advertisement of me + Laptop image) ============
     section.hero#hero
@@ -54,8 +74,8 @@ html lang="en"
             / img src="images/logo/logotest.png" alt="yising-logo"
             img src="images/logo/logocolored2.png" alt="yising-logo"
             // act as a placeholder image
-          div.gallery
-            img.hero-img.laptop src="images/hero/Macbook1.png" alt="laptop-photo"
+          / div.gallery
+          /   img.hero-img.laptop src="images/hero/Macbook1.png" alt="laptop-photo"
             / img.hero-img.phone src=images/phone1.png" alt="phone-photo"
             / img.hero-img.monitor src=images/monitor.png" alt="monitor-photo"
 
@@ -170,126 +190,126 @@ html lang="en"
 
 
       / ================ Skill Bar =================
-      div.skillbargrid.col
-        / ================= FRONT END ================
-        <div class="skillbar clearfix " data-percent="70%">
-        <div class="skillbar-title" style="background: #b20000;"><span>HTML</span></div>
-        <div class="skillbar-bar" style="background: #a80b0b;"></div>
-        <div class="skill-bar-percent"><span>70%</span></div>
-        </div>
-
-        <div class="skillbar clearfix " data-percent="70%">
-        <div class="skillbar-title" style="background: #b20000;"><span>Slim</span></div>
-        <div class="skillbar-bar" style="background: #a80b0b;"></div>
-        <div class="skill-bar-percent"><span>70%</span></div>
-        </div>
-
-        <div class="skillbar clearfix " data-percent="70%">
-        <div class="skillbar-title" style="background: #b20000;"><span>CSS</span></div>
-        <div class="skillbar-bar" style="background: #a80b0b;"></div>
-        <div class="skill-bar-percent"><span>70%</span></div>
-        </div>
-
-        <div class="skillbar clearfix " data-percent="70%">
-        <div class="skillbar-title" style="background: #b20000;"><span>Sass</span></div>
-        <div class="skillbar-bar" style="background: #a80b0b;"></div>
-        <div class="skill-bar-percent"><span>70%</span></div>
-        </div>
-
-        <div class="skillbar clearfix " data-percent="70%">
-        <div class="skillbar-title" style="background: #b20000;"><span>Balsamiq</span></div>
-        <div class="skillbar-bar" style="background: #a80b0b;"></div>
-        <div class="skill-bar-percent"><span>70%</span></div>
-        </div>
-
-        <div class="skillbar clearfix " data-percent="70%">
-        <div class="skillbar-title" style="background: #b20000;"><span>RWD</span></div>
-        <div class="skillbar-bar" style="background: #a80b0b;"></div>
-        <div class="skill-bar-percent"><span>70%</span></div>
-        </div>
-
-        <div class="skillbar clearfix " data-percent="60%">
-        <div class="skillbar-title" style="background: #b20000;"><span>Bootstrap</div>
-        <div class="skillbar-bar" style="background: #a80b0b;"></div>
-        <div class="skill-bar-percent"><span>60%</span></div>
-        </div>
-
-        <div class="skillbar clearfix " data-percent="50%">
-          <div class="skillbar-title" style="background: #b20000;"><span>Javascript</span></div>
-          <div class="skillbar-bar" style="background: #a80b0b;"></div>
-          <div class="skill-bar-percent"><span>50%</span></div>
-        </div>
-
-        <div class="skillbar clearfix " data-percent="50%">
-          <div class="skillbar-title" style="background: #b20000;"><span>jQuery</span></div>
-          <div class="skillbar-bar" style="background: #a80b0b;"></div>
-          <div class="skill-bar-percent"><span>50%</span></div>
-        </div>
-
-        <div class="skillbar clearfix " data-percent="30%">
-        	<div class="skillbar-title" style="background: #b20000;"><span>Gimp</span></div>
-        	<div class="skillbar-bar" style="background: #a80b0b;"></div>
-        	<div class="skill-bar-percent"><span>30%</span></div>
-        </div>
-
-        <div class="skillbar clearfix " data-percent="30%">
-          <div class="skillbar-title" style="background: #b20000;"><span>Inkscape</span></div>
-          <div class="skillbar-bar" style="background: #a80b0b;"></div>
-          <div class="skill-bar-percent"><span>30%</span></div>
-        </div>
-
-
-        / ===============  BACK END ===============
-        <div class="skillbar clearfix " data-percent="60%">
-          <div class="skillbar-title" style="background: #707070;"><span>Ruby</span></div>
-          <div class="skillbar-bar" style="background: #7f7f7f;"></div>
-          <div class="skill-bar-percent"><span>60%</span></div>
-        </div>
-
-        <div class="skillbar clearfix " data-percent="60%">
-          <div class="skillbar-title" style="background: #707070;"><span>Rails</span></div>
-          <div class="skillbar-bar" style="background: #7f7f7f;"></div>
-          <div class="skill-bar-percent"><span>60%</span></div>
-        </div>
-
-        <div class="skillbar clearfix " data-percent="60%">
-          <div class="skillbar-title" style="background: #707070;"><span>PostgreSQL</span></div>
-          <div class="skillbar-bar" style="background: #7f7f7f;"></div>
-          <div class="skill-bar-percent"><span>60%</span></div>
-        </div>
-
-
-        <div class="skillbar clearfix " data-percent="60%">
-          <div class="skillbar-title" style="background: #707070;"><span>Python</span></div>
-          <div class="skillbar-bar" style="background: #7f7f7f;"></div>
-          <div class="skill-bar-percent"><span>60%</span></div>
-        </div>
-
-        <div class="skillbar clearfix " data-percent="30%">
-        <div class="skillbar-title" style="background: #707070;"><span>RSpec</span></div>
-        <div class="skillbar-bar" style="background: #7f7f7f;"></div>
-        <div class="skill-bar-percent"><span>30%</span></div>
-        </div>
-
-        / ================== OTHERS =====================
-        <div class="skillbar clearfix " data-percent="60%">
-        <div class="skillbar-title" style="background: #0e0e0e;"><span>Heroku</span></div>
-        <div class="skillbar-bar" style="background: #1e1e1e;"></div>
-        <div class="skill-bar-percent"><span>60%</span></div>
-        </div>
-
-        <div class="skillbar clearfix " data-percent="50%">
-          <div class="skillbar-title" style="background: #0e0e0e;"><span>Git</span></div>
-          <div class="skillbar-bar" style="background: #1e1e1e;"></div>
-          <div class="skill-bar-percent"><span>50%</span></div>
-        </div>
-
-
-        <div class="skillbar clearfix " data-percent="50%">
-          <div class="skillbar-title" style="background: #0e0e0e;"><span>Linux CLI</span></div>
-          <div class="skillbar-bar" style="background: #1e1e1e;"></div>
-          <div class="skill-bar-percent"><span>50%</span></div>
-        </div>
+      / div.skillbargrid.col
+      /   / ================= FRONT END ================
+      /   <div class="skillbar clearfix " data-percent="70%">
+      /   <div class="skillbar-title" style="background: #b20000;"><span>HTML</span></div>
+      /   <div class="skillbar-bar" style="background: #a80b0b;"></div>
+      /   <div class="skill-bar-percent"><span>70%</span></div>
+      /   </div>
+      /
+      /   <div class="skillbar clearfix " data-percent="70%">
+      /   <div class="skillbar-title" style="background: #b20000;"><span>Slim</span></div>
+      /   <div class="skillbar-bar" style="background: #a80b0b;"></div>
+      /   <div class="skill-bar-percent"><span>70%</span></div>
+      /   </div>
+      /
+      /   <div class="skillbar clearfix " data-percent="70%">
+      /   <div class="skillbar-title" style="background: #b20000;"><span>CSS</span></div>
+      /   <div class="skillbar-bar" style="background: #a80b0b;"></div>
+      /   <div class="skill-bar-percent"><span>70%</span></div>
+      /   </div>
+      /
+      /   <div class="skillbar clearfix " data-percent="70%">
+      /   <div class="skillbar-title" style="background: #b20000;"><span>Sass</span></div>
+      /   <div class="skillbar-bar" style="background: #a80b0b;"></div>
+      /   <div class="skill-bar-percent"><span>70%</span></div>
+      /   </div>
+      /
+      /   <div class="skillbar clearfix " data-percent="70%">
+      /   <div class="skillbar-title" style="background: #b20000;"><span>Balsamiq</span></div>
+      /   <div class="skillbar-bar" style="background: #a80b0b;"></div>
+      /   <div class="skill-bar-percent"><span>70%</span></div>
+      /   </div>
+      /
+      /   <div class="skillbar clearfix " data-percent="70%">
+      /   <div class="skillbar-title" style="background: #b20000;"><span>RWD</span></div>
+      /   <div class="skillbar-bar" style="background: #a80b0b;"></div>
+      /   <div class="skill-bar-percent"><span>70%</span></div>
+      /   </div>
+      /
+      /   <div class="skillbar clearfix " data-percent="60%">
+      /   <div class="skillbar-title" style="background: #b20000;"><span>Bootstrap</div>
+      /   <div class="skillbar-bar" style="background: #a80b0b;"></div>
+      /   <div class="skill-bar-percent"><span>60%</span></div>
+      /   </div>
+      /
+      /   <div class="skillbar clearfix " data-percent="50%">
+      /     <div class="skillbar-title" style="background: #b20000;"><span>Javascript</span></div>
+      /     <div class="skillbar-bar" style="background: #a80b0b;"></div>
+      /     <div class="skill-bar-percent"><span>50%</span></div>
+      /   </div>
+      /
+      /   <div class="skillbar clearfix " data-percent="50%">
+      /     <div class="skillbar-title" style="background: #b20000;"><span>jQuery</span></div>
+      /     <div class="skillbar-bar" style="background: #a80b0b;"></div>
+      /     <div class="skill-bar-percent"><span>50%</span></div>
+      /   </div>
+      /
+      /   <div class="skillbar clearfix " data-percent="30%">
+      /   	<div class="skillbar-title" style="background: #b20000;"><span>Gimp</span></div>
+      /   	<div class="skillbar-bar" style="background: #a80b0b;"></div>
+      /   	<div class="skill-bar-percent"><span>30%</span></div>
+      /   </div>
+      /
+      /   <div class="skillbar clearfix " data-percent="30%">
+      /     <div class="skillbar-title" style="background: #b20000;"><span>Inkscape</span></div>
+      /     <div class="skillbar-bar" style="background: #a80b0b;"></div>
+      /     <div class="skill-bar-percent"><span>30%</span></div>
+      /   </div>
+      /
+      /
+      /   / ===============  BACK END ===============
+      /   <div class="skillbar clearfix " data-percent="60%">
+      /     <div class="skillbar-title" style="background: #707070;"><span>Ruby</span></div>
+      /     <div class="skillbar-bar" style="background: #7f7f7f;"></div>
+      /     <div class="skill-bar-percent"><span>60%</span></div>
+      /   </div>
+      /
+      /   <div class="skillbar clearfix " data-percent="60%">
+      /     <div class="skillbar-title" style="background: #707070;"><span>Rails</span></div>
+      /     <div class="skillbar-bar" style="background: #7f7f7f;"></div>
+      /     <div class="skill-bar-percent"><span>60%</span></div>
+      /   </div>
+      /
+      /   <div class="skillbar clearfix " data-percent="60%">
+      /     <div class="skillbar-title" style="background: #707070;"><span>PostgreSQL</span></div>
+      /     <div class="skillbar-bar" style="background: #7f7f7f;"></div>
+      /     <div class="skill-bar-percent"><span>60%</span></div>
+      /   </div>
+      /
+      /
+      /   <div class="skillbar clearfix " data-percent="60%">
+      /     <div class="skillbar-title" style="background: #707070;"><span>Python</span></div>
+      /     <div class="skillbar-bar" style="background: #7f7f7f;"></div>
+      /     <div class="skill-bar-percent"><span>60%</span></div>
+      /   </div>
+      /
+      /   <div class="skillbar clearfix " data-percent="30%">
+      /   <div class="skillbar-title" style="background: #707070;"><span>RSpec</span></div>
+      /   <div class="skillbar-bar" style="background: #7f7f7f;"></div>
+      /   <div class="skill-bar-percent"><span>30%</span></div>
+      /   </div>
+      /
+      /   / ================== OTHERS =====================
+      /   <div class="skillbar clearfix " data-percent="60%">
+      /   <div class="skillbar-title" style="background: #0e0e0e;"><span>Heroku</span></div>
+      /   <div class="skillbar-bar" style="background: #1e1e1e;"></div>
+      /   <div class="skill-bar-percent"><span>60%</span></div>
+      /   </div>
+      /
+      /   <div class="skillbar clearfix " data-percent="50%">
+      /     <div class="skillbar-title" style="background: #0e0e0e;"><span>Git</span></div>
+      /     <div class="skillbar-bar" style="background: #1e1e1e;"></div>
+      /     <div class="skill-bar-percent"><span>50%</span></div>
+      /   </div>
+      /
+      /
+      /   <div class="skillbar clearfix " data-percent="50%">
+      /     <div class="skillbar-title" style="background: #0e0e0e;"><span>Linux CLI</span></div>
+      /     <div class="skillbar-bar" style="background: #1e1e1e;"></div>
+      /     <div class="skill-bar-percent"><span>50%</span></div>
+      /   </div>
 
 
 
@@ -1029,7 +1049,7 @@ html lang="en"
           p.number.regular ©2018
 
         div.nav-footer
-          a.active.scroll href="#hero" Home
+          a.active.scroll href="#nav" Home
           a.active.scroll href="#aboutme" About
           a.active.scroll href="#skills" Skills
           a.active.scroll href="#portfolio" Portfolio
