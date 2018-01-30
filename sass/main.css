@@ -1524,6 +1524,12 @@ a.project-link {
     -ms-flex-preferred-size: calc((100% / 4) - 1rem);
     flex-basis: calc((100% / 4) - 1rem); } }
 
+.modal-project-title {
+  font-size: 1.5rem !important; }
+
+.modal-backdrop.fade.show {
+  z-index: 1000; }
+
 /* define the number of grid columns */
 .contact-me {
   background: #252934; }
@@ -2004,7 +2010,7 @@ p.modal-project-requirements {
   font-weight: 700; }
 
 .sticky {
-  z-index: 99999;
+  z-index: 100;
   width: 100%;
   top: 0;
   position: fixed;
