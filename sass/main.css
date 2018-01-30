@@ -1262,7 +1262,7 @@ a.btn.btn--secondary {
 
 @media only screen and (max-width: 600px) {
   .middle-box h1 {
-    font-size: 2rem; } }
+    font-size: 2rem !important; } }
 
 .points {
   display: -webkit-box;
