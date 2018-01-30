@@ -1530,6 +1530,10 @@ a.project-link {
 .modal-backdrop.fade.show {
   z-index: 1000; }
 
+.aggregator-link {
+  font-weight: 700;
+  text-decoration: none !important; }
+
 /* define the number of grid columns */
 .contact-me {
   background: #252934; }
