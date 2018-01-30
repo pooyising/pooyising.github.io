@@ -1,7 +1,7 @@
 function initMap() {
   // Styles a map in night mode.
   var map = new google.maps.Map(document.getElementById('map'), {
-    center: {lat: 1.3884, lng: 103.9036},
+    center: {lat: 1.3700, lng: 103.9500},
     zoom: 12,
     styles: [
       {elementType: 'geometry', stylers: [{color: '#242f3e'}]},
@@ -26,7 +26,7 @@ function initMap() {
     ]
   });
 
-  var myLatLng = {lat: 1.3884, lng: 103.9036}
+  var myLatLng = {lat: 1.3700, lng: 103.9500}
   var marker = new google.maps.Marker({
     position: myLatLng,
     map: map,
@@ -39,7 +39,7 @@ function initMap() {
       '</div>'+
       '<div id="bodyContent">'+
       // '<p>186B Rivervale Drive</p>'+'<p>+(65) 92963897</p>'+'<p>pooyising@gmail.com</p>'+
-      '<p>Rivervale Drive <br> +(65) 92963897 <br> pooyisingwork@gmail.com</p>'+
+      '<p>Singapore <br> +(65) 9296389-seven<br> pooyisingwork [at] gmail [dot] com</p>'+
       '</div>'+
     '</div>';
 
