@@ -21,12 +21,7 @@
 // .navbar-toggler
 //   margin-left: auto
 
-.navbar-toggler:not([disabled]):not(.disabled)
-  border: none
-  outline: none
-  &:hover, &:focus
-    outline: none
-    border: none
+
 
 .navbar-toggler-icon
   background-image: url("/images/menuicon.svg") !important
@@ -36,6 +31,14 @@
     // margin-left: auto
 // .navbar-toggler:not([disabled]):not(.disabled)
 //   margin-left: auto
+
+.navbar-toggler:not([disabled]):not(.disabled)
+  background-image: url("/images/menuicon.svg") !important
+  border: none
+  outline: none
+  &:hover, &:focus
+    outline: none
+    border: none
 
 .nav-link
   color: #fff !important

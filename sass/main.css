@@ -1967,16 +1967,17 @@ p.modal-project-requirements {
     max-width: 85vw;
     margin-left: auto; } }
 
-.navbar-toggler:not([disabled]):not(.disabled) {
-  border: none;
-  outline: none; }
-  .navbar-toggler:not([disabled]):not(.disabled):hover, .navbar-toggler:not([disabled]):not(.disabled):focus {
-    outline: none;
-    border: none; }
-
 .navbar-toggler-icon {
   background-image: url("/images/menuicon.svg") !important; }
   .navbar-toggler-icon:hover, .navbar-toggler-icon:focus {
+    outline: none;
+    border: none; }
+
+.navbar-toggler:not([disabled]):not(.disabled) {
+  background-image: url("/images/menuicon.svg") !important;
+  border: none;
+  outline: none; }
+  .navbar-toggler:not([disabled]):not(.disabled):hover, .navbar-toggler:not([disabled]):not(.disabled):focus {
     outline: none;
     border: none; }
 
