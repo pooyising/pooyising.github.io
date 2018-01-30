@@ -1974,6 +1974,7 @@ p.modal-project-requirements {
     border: none; }
 
 .navbar-toggler:not([disabled]):not(.disabled) {
+  background-image: url("/images/menuicon.svg") !important;
   border: none;
   outline: none; }
   .navbar-toggler:not([disabled]):not(.disabled):hover, .navbar-toggler:not([disabled]):not(.disabled):focus {
