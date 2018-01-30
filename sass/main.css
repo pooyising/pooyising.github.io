@@ -1967,9 +1967,9 @@ p.modal-project-requirements {
     max-width: 85vw;
     margin-left: auto; } }
 
-.navbar-light .navbar-toggler-icon {
+.nvabar-light .navbar-toggler-icon {
   background-image: url("/images/menuicon.svg") !important; }
-  .navbar-light .navbar-toggler-icon:hover, .navbar-light .navbar-toggler-icon:focus {
+  .nvabar-light .navbar-toggler-icon:hover, .nvabar-light .navbar-toggler-icon:focus {
     outline: none;
     border: none; }
 
