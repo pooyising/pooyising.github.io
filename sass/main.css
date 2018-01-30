@@ -1260,6 +1260,10 @@ a.btn.btn--secondary {
     width: 100%;
     height: inherit; } }
 
+@media only screen and (max-width: 600px) {
+  .middle-box h1 {
+    font-size: 2rem; } }
+
 .points {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1974,6 +1978,7 @@ p.modal-project-requirements {
     border: none; }
 
 .navbar-toggler:not([disabled]):not(.disabled) {
+  background-image: none;
   outline: none; }
   .navbar-toggler:not([disabled]):not(.disabled):hover, .navbar-toggler:not([disabled]):not(.disabled):focus {
     outline: none;
