@@ -39,7 +39,7 @@ function initMap() {
       '</div>'+
       '<div id="bodyContent">'+
       // '<p>186B Rivervale Drive</p>'+'<p>+(65) 92963897</p>'+'<p>pooyising@gmail.com</p>'+
-      '<p>Call +(65) 9296389-seven<br>if you are unable to<br>find this location.</p>'+
+      '<p style="font-family: Arial">Call 9296389seven <br>if you are unable to<br>find this location.</p>'+
       // '<p>Singapore <br> +(65) 9296389-seven<br> pooyisingwork [at] gmail [dot] com</p>'+
       '</div>'+
     '</div>';
