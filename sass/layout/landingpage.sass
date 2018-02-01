@@ -32,6 +32,23 @@
   .container.landingpage
     width: 75%
 
+// ================= added this line of code to fix bug of canvas not adjusting to viewport height on mobile.==============
+@media (max-device-aspect-ratio: 3/4)
+  section.landingpage.parallax--bg
+    height: calc(100vw * 1.333 - 9%)
+
+@media (max-device-aspect-ratio: 2/3)
+  section.landingpage.parallax--bg
+    height: calc(100vw * 1.5 - 9%)
+
+@media (max-device-aspect-ratio: 10/16)
+  section.landingpage.parallax--bg
+    height: calc(100vw * 1.6 - 9%)
+
+@media (max-device-aspect-ratio: 9/16)
+  section.landingpage.parallax--bg
+    height: calc(100vw * 1.778 - 9%)
+// ============================ End of mobile canvas bug fix ==========================================================
 
 section.landingpage.parallax--bg
   // background-image: url("landingpage.jpg")
@@ -47,12 +64,22 @@ section.landingpage.parallax--bg
   overflow-y: hidden
 
   // added this line of code to fix bug of canvas not adjusting to viewport height on mobile.
-  max-height: 100vh
+  // max-height: 100%
+  // The following code will affect browser resizing:
 
   canvas.canvas
     position: absolute
     top: 0
     left: 0
+
+    // added this line of code to fix bug of canvas not adjusting to viewport height on mobile. This will affect the sticky navbar. When the viewport hits the navbar, there will be a minimum amount of scrolling down before navbar gets sticky.
+    // height: inherit
+    // width: inherit
+    // The following code will affect browser resizing:
+    // transition: height 1000000s ease
+    // -webkit-transition: height 1000000s ease
+    // -moz-transition: height 1000000s ease
+    // -o-transition: height 1000000s ease
 
   .container
     display: flex
