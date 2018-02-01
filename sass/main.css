@@ -1742,7 +1742,8 @@ section.landingpage.parallax--bg {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   position: relative;
-  overflow-y: hidden; }
+  overflow-y: hidden;
+  max-height: 100vh; }
   section.landingpage.parallax--bg canvas.canvas {
     position: absolute;
     top: 0;

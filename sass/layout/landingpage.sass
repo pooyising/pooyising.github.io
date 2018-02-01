@@ -46,6 +46,8 @@ section.landingpage.parallax--bg
   position: relative
   overflow-y: hidden
 
+  // added this line of code to fix bug of canvas not adjusting to viewport height on mobile.
+  max-height: 100vh
 
   canvas.canvas
     position: absolute
