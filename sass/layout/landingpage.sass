@@ -61,11 +61,18 @@ section.landingpage.parallax--bg
   box-sizing: border-box
 
   position: relative
+
+  // added this line of code to fix bug of canvas not adjusting to viewport height on mobile.
+  // overflow-y: hidden
   overflow-y: auto
 
   // added this line of code to fix bug of canvas not adjusting to viewport height on mobile.
   // max-height: 100%
   // The following code will affect browser resizing:
+  // transition: height 1000000s ease
+  // -webkit-transition: height 1000000s ease
+  // -moz-transition: height 1000000s ease
+  // -o-transition: height 1000000s ease
 
   canvas.canvas
     position: absolute
