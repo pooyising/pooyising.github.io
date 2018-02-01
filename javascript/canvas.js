@@ -196,7 +196,7 @@ $(document).ready(function() {
   function init() {
       particles = []; //(storing all our particles in an array)
 
-      for (let i = 0; i < 200; i++) {
+      for (let i = 0; i < 25; i++) {
           const radius = (Math.random() * 2) + 1; // we only want the radius to be from 1 to 2.
           // To achieve a smooth effect, we want to make sure that the particles are spawned with different radii(so they are not identical in size) For each time a new particle is generated, we will give it a different radius. We use Math.random() which will give us any value from 0 to 1, mutiply it by 2 which will give us value from 0 to 2. We only want the radius to be from 1 to 2, so we add 1 at the end.
 
@@ -206,6 +206,7 @@ $(document).ready(function() {
           // using randomColor(colors), we'll generate particles with random colors.
       }
       console.log(particles);
+
   }
 
   // Animation Loop
