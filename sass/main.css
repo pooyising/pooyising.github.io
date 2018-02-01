@@ -1732,22 +1732,6 @@ footer {
   .container.landingpage {
     width: 75%; } }
 
-@media (max-device-aspect-ratio: 3 / 4) {
-  section.landingpage.parallax--bg {
-    height: calc(100vw * 1.333 - 9%); } }
-
-@media (max-device-aspect-ratio: 2 / 3) {
-  section.landingpage.parallax--bg {
-    height: calc(100vw * 1.5 - 9%); } }
-
-@media (max-device-aspect-ratio: 10 / 16) {
-  section.landingpage.parallax--bg {
-    height: calc(100vw * 1.6 - 9%); } }
-
-@media (max-device-aspect-ratio: 9 / 16) {
-  section.landingpage.parallax--bg {
-    height: calc(100vw * 1.778 - 9%); } }
-
 section.landingpage.parallax--bg {
   background-size: cover;
   background-position: center;
@@ -1758,7 +1742,7 @@ section.landingpage.parallax--bg {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   position: relative;
-  overflow-y: hidden; }
+  overflow-y: auto; }
   section.landingpage.parallax--bg canvas.canvas {
     position: absolute;
     top: 0;
