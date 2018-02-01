@@ -195,19 +195,58 @@ $(document).ready(function() {
   let particles
   function init() {
       particles = []; //(storing all our particles in an array)
+      var w = $(window).width();
+      // Mobile size
+      if (w < 600) {
+        for (let i = 0; i < 25; i++) {
+            const radius = (Math.random() * 2) + 1; // we only want the radius to be from 1 to 2.
+            // To achieve a smooth effect, we want to make sure that the particles are spawned with different radii(so they are not identical in size) For each time a new particle is generated, we will give it a different radius. We use Math.random() which will give us any value from 0 to 1, mutiply it by 2 which will give us value from 0 to 2. We only want the radius to be from 1 to 2, so we add 1 at the end.
 
-      for (let i = 0; i < 25; i++) {
-          const radius = (Math.random() * 2) + 1; // we only want the radius to be from 1 to 2.
-          // To achieve a smooth effect, we want to make sure that the particles are spawned with different radii(so they are not identical in size) For each time a new particle is generated, we will give it a different radius. We use Math.random() which will give us any value from 0 to 1, mutiply it by 2 which will give us value from 0 to 2. We only want the radius to be from 1 to 2, so we add 1 at the end.
 
-
-          // particles.push(new Particle(canvas.width / 2, canvas.height / 2, 5, 'blue'));
-          particles.push(new Particle(canvas.width / 2, canvas.height / 2, radius, randomColor(colors)));
-          // using randomColor(colors), we'll generate particles with random colors.
+            // particles.push(new Particle(canvas.width / 2, canvas.height / 2, 5, 'blue'));
+            particles.push(new Particle(canvas.width / 2, canvas.height / 2, radius, randomColor(colors)));
+            // using randomColor(colors), we'll generate particles with random colors.
+        }
+        console.log(particles);
       }
-      console.log(particles);
+      // Tablet size
+      else if ( 600 <= w && w <= 1200) {
+        for (let i = 0; i < 50; i++) {
+            const radius = (Math.random() * 2) + 1; // we only want the radius to be from 1 to 2.
+            // To achieve a smooth effect, we want to make sure that the particles are spawned with different radii(so they are not identical in size) For each time a new particle is generated, we will give it a different radius. We use Math.random() which will give us any value from 0 to 1, mutiply it by 2 which will give us value from 0 to 2. We only want the radius to be from 1 to 2, so we add 1 at the end.
 
-  }
+
+            // particles.push(new Particle(canvas.width / 2, canvas.height / 2, 5, 'blue'));
+            particles.push(new Particle(canvas.width / 2, canvas.height / 2, radius, randomColor(colors)));
+            // using randomColor(colors), we'll generate particles with random colors.
+        }
+        console.log(particles);
+      }
+      // Desktop size (more than 1200px)
+      else {
+        for (let i = 0; i < 50; i++) {
+            const radius = (Math.random() * 2) + 1; // we only want the radius to be from 1 to 2.
+            // To achieve a smooth effect, we want to make sure that the particles are spawned with different radii(so they are not identical in size) For each time a new particle is generated, we will give it a different radius. We use Math.random() which will give us any value from 0 to 1, mutiply it by 2 which will give us value from 0 to 2. We only want the radius to be from 1 to 2, so we add 1 at the end.
+
+
+            // particles.push(new Particle(canvas.width / 2, canvas.height / 2, 5, 'blue'));
+            particles.push(new Particle(canvas.width / 2, canvas.height / 2, radius, randomColor(colors)));
+            // using randomColor(colors), we'll generate particles with random colors.
+        }
+        console.log(particles);
+      }
+      // for (let i = 0; i < 25; i++) {
+      //     const radius = (Math.random() * 2) + 1; // we only want the radius to be from 1 to 2.
+      //     // To achieve a smooth effect, we want to make sure that the particles are spawned with different radii(so they are not identical in size) For each time a new particle is generated, we will give it a different radius. We use Math.random() which will give us any value from 0 to 1, mutiply it by 2 which will give us value from 0 to 2. We only want the radius to be from 1 to 2, so we add 1 at the end.
+      //
+      //
+      //     // particles.push(new Particle(canvas.width / 2, canvas.height / 2, 5, 'blue'));
+      //     particles.push(new Particle(canvas.width / 2, canvas.height / 2, radius, randomColor(colors)));
+      //     // using randomColor(colors), we'll generate particles with random colors.
+      // }
+      // console.log(particles);
+
+  } // End of function init()
 
   // Animation Loop
   function animate() {
