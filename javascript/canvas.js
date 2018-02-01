@@ -195,6 +195,7 @@ $(document).ready(function() {
   let particles
   function init() {
       particles = []; //(storing all our particles in an array)
+      // Responsive CANVAS
       var w = $(window).width();
       // Mobile size
       if (w < 600) {
