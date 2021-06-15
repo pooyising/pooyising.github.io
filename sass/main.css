@@ -2036,21 +2036,29 @@ body {
 
 
 
-  /**
-   * ======================================== Final Changes ======================================
-   */
-   @media only screen and (min-width: 1300px) {
-    .paragraph-skills-point {
-      margin-bottom: 3em; }
-  }
+/**
+ * ======================================== Final Changes ======================================
+ */
+ @media only screen and (min-width: 1300px) {
+  .paragraph-skills-point {
+    margin-bottom: 3    em; }
+}
 
-  @media only screen and (min-width: 1300px) {
-    div.col.img-box.landscape {
-      display: none;
-      height: 0%;
-      width: 0%;
-    }
-    div.col.paragraph {
-      flex-basis: 100%
-    }
+@media only screen and (min-width: 1300px) {
+  div.col.img-box.landscape {
+    display: none;
+    height: 0%;
+    width: 0%;
   }
+  div.col.paragraph {
+    flex-basis: 100%
+  }
+}
+
+.middle-box {
+  background: linear-gradient(15deg , #000000, #5e5368);
+}
+
+.col.paragraph {
+  background: linear-gradient(15deg, #000000, #5e5368);
+}
