@@ -2025,3 +2025,32 @@ body {
 
 .active {
   color: #E31B6D !important; }
+
+
+
+
+
+
+
+
+
+
+
+  /**
+   * ======================================== Final Changes ======================================
+   */
+   @media only screen and (min-width: 1300px) {
+    .paragraph-skills-point {
+      margin-bottom: 2em; }
+  }
+
+  @media only screen and (min-width: 1300px) {
+    div.col.img-box.landscape {
+      display: none;
+      height: 0%;
+      width: 0%;
+    }
+    div.col.paragraph {
+      flex-basis: 100%
+    }
+  }
